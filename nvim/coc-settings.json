@@ -1,0 +1,39 @@
+        update: {
+    "eslint.autoFixOnSave": true,
+    "eslint.probe": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "html",
+        "vue",
+        "markdown"
+    ],
+    "coc.preferences.formatOnSaveFiletypes": [
+        "c",
+        "python",
+        "cpp",
+        "json",
+        "js",
+        "vue",
+        "html",
+        "ts",
+        "css",
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "markdown"
+    ],
+    "prettier.tabWidth": 4,
+    "prettier.useTabs": false,
+    "prettier.singleQuote": true,
+    "prettier.disableSuccessMessage": true,
+    "prettier.eslintIntegration": true,
+    "prettier.tslintIntegration": true,
+    "deno.enable": true,
+    "deno.unstable": true
+}
+
+
+   

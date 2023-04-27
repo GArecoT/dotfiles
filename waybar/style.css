@@ -1,0 +1,116 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family: Inconsolata-Black;
+  font-size: 14px;
+  min-height: 20px;
+}
+
+window#waybar {
+  background: transparent;
+  color: #cdd6f4;
+}
+
+window#waybar > .horizontal {
+  margin-top: 0px;
+}
+
+.horizontal.modules-center {
+  /* gradient hax >:) */
+  background: linear-gradient(to right, #1e1e2e 0%, #1e1e2e 60%, #f5c2e7 60%);
+  border-radius: 50px;
+}
+#custom-date,
+#custom-notification,
+#custom-media,
+#custom-updates,
+#custom-downloads,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#workspaces,
+#tray,
+#window,
+#temperature {
+  background-color: #181825;
+  padding: 5px 10px;
+}
+#clock {
+  padding: 0 20px;
+  color: #313244;
+  background-color: #f5c2e7;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  padding-left: 15px;
+}
+
+#pulseaudio {
+  color: #9ccfd8;
+  border-radius: 0px 15px 15px 0px;
+  padding-right: 15px;
+  padding: 0 15px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  padding-right: 30px;
+}
+#network {
+  color: #fab387;
+  padding-left: 15px;
+  padding: 0 15px;
+  padding-left: 30px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+#tray {
+  padding-left: 0px;
+}
+#temperature {
+  color: #c1e1c1;
+}
+#workspaces {
+  padding: 8px 10px;
+  padding-right: 15px;
+  background-color: #1e1e2e;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+#workspaces button {
+  padding: 5px 10px;
+  color: #cba6f7;
+}
+#custom-media {
+  color: #f9e2af;
+}
+#workspaces button.focused {
+  color: #0f0f0f;
+  background-color: #c49ec4;
+  border-radius: 15px;
+}
+#custom-updates {
+  color: #9ccfd8;
+}
+#custom-downloads {
+  color: #f6c177;
+}
+#workspaces button.urgent {
+  color: #0f0f0f;
+  background-color: #9ec3c4;
+  border-radius: 15px;
+}
+
+#workspaces button:hover {
+  background-color: #c49ec4;
+  color: #0f0f0f;
+  border-radius: 15px;
+}
+
+#custom-notification {
+  color: #eb6f92;
+  padding: 0 15px;
+  padding-left: 30px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+

@@ -1,0 +1,131 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family: mononoki Nerd Font;
+  font-size: 14px;
+  min-height: 20px;
+}
+
+window#waybar {
+  background: transparent;
+  color: white;
+}
+
+tooltip {
+  background: #0f0f0f;
+  border-radius: 15px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #262626;
+}
+
+#workspaces button {
+  padding: 5px 10px;
+  color: #cba6f7;
+}
+
+#workspaces button.focused {
+  color: #0f0f0f;
+  background-color: #c49ec4;
+  border-radius: 15px;
+}
+
+#workspaces button.urgent {
+  color: #0f0f0f;
+  background-color: #9ec3c4;
+  border-radius: 15px;
+}
+
+#workspaces button:hover {
+  background-color: #c49ec4;
+  color: #0f0f0f;
+  border-radius: 15px;
+}
+
+#custom-date,
+#custom-notification,
+#custom-media,
+#custom-updates,
+#custom-downloads,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#workspaces,
+#tray,
+#window,
+#temperature {
+  background-color: #181825;
+  padding: 5px 10px;
+  margin: 5px 0px;
+}
+
+#temperature {
+  border-radius: 0px 15px 15px 0px;
+  padding-right: 15px;
+  color: #c1e1c1;
+  background-color: #1e1e2e;
+}
+
+#window {
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 15px;
+  color: #cdd6f4;
+  padding: 0px 15px;
+}
+
+#custom-media {
+  color: #f9e2af;
+}
+
+#custom-notification {
+  color: #eb6f92;
+  border-radius: 15px 0px 0px 15px;
+  padding-left: 15px;
+}
+
+#tray {
+  padding-left: 0px;
+}
+
+#workspaces {
+  background-color: #1e1e2e;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+
+#custom-date {
+  color: #c4a7e7;
+  border-radius: 0px 15px 15px 0px;
+}
+
+#custom-updates {
+  color: #9ccfd8;
+}
+
+#custom-downloads {
+  color: #f6c177;
+}
+
+#clock {
+  color: #c4a7e7;
+  border-radius: 15px;
+  margin-left: 10px;
+  padding: 0px 15px;
+}
+
+#network {
+  color: #fab387;
+  border-radius: 15px 0px 0px 15px;
+  margin-left: 10px;
+  padding-left: 15px;
+  background-color: #1e1e2e;
+}
+
+#pulseaudio {
+  color: #9ccfd8;
+  border-radius: 0px 15px 15px 0px;
+  margin-right: 10px;
+  padding-right: 15px;
+}
