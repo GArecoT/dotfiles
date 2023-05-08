@@ -650,6 +650,7 @@ for _, ls in ipairs(language_servers) do
     -- you can add other fields for setting up lsp server in this table
   })
 end
+
 require('ufo').setup({
   open_fold_hl_timeout = 0
 })
@@ -744,6 +745,16 @@ mason_lspconfig.setup_handlers {
     }
   end,
 }
+vim.api.nvim_create_autocmd("LspAttach", {
+  desc = "Fix startup error by disabling semantic tokens for omnisharp",
+  group = vim.api.nvim_create_augroup("OmnisharpHook", {}),
+  callback = function(ev)
+    local client = vim.lsp.get_client_by_id(ev.data.client_id)
+    if client.name == "omnisharp_mono" then
+      client.server_capabilities.semanticTokensProvider = nil
+    end
+  end,
+})
 
 -- Turn on lsp status information
 require('fidget').setup()
@@ -765,24 +776,24 @@ cmp.setup {
       behavior = cmp.ConfirmBehavior.Replace,
       select = true --fish como terminal,
     },
-    ['<Tab>'] = cmp.mapping(function(fallback)
-      if cmp.visible() then
-        cmp.select_next_item()
-      elseif luasnip.expand_or_jumpable() then
-        luasnip.expand_or_jump()
-      else
-        fallback()
-      end
-    end, { 'i', 's' }),
-    ['<S-Tab>'] = cmp.mapping(function(fallback)
-      if cmp.visible() then
-        cmp.select_prev_item()
-      elseif luasnip.jumpable(-1) then
-        luasnip.jump(-1)
-      else
-        fallback()
-      end
-    end, { 'i', 's' }),
+    --   ['<Tab>'] = cmp.mapping(function(fallback)
+    --     if cmp.visible() then
+    --       cmp.select_next_item()
+    --     elseif luasnip.expand_or_jumpable() then
+    --       luasnip.expand_or_jump()
+    --     else
+    --       fallback()
+    --     end
+    --   end, { 'i', 's' }),
+    --   ['<S-Tab>'] = cmp.mapping(function(fallback)
+    --     if cmp.visible() then
+    --       cmp.select_prev_item()
+    --     elseif luasnip.jumpable(-1) then
+    --       luasnip.jump(-1)
+    --     else
+    --       fallback()
+    --     end
+    --   end, { 'i', 's' }),
   },
   sources = {
     { name = 'nvim_lsp' },
