@@ -489,6 +489,7 @@ vim.cmd [[autocmd BufWritePre *lua lua vim.lsp.buf.format()]]
 vim.cmd [[autocmd BufWritePre *ts lua vim.lsp.buf.format()]]
 vim.cmd [[autocmd BufWritePre *js lua vim.lsp.buf.format()]]
 vim.cmd [[autocmd BufWritePre *rs lua vim.lsp.buf.format()]]
+vim.cmd [[autocmd BufWritePre *cs lua vim.lsp.buf.format()]]
 
 
 -- [[ Highlight on yank ]]
@@ -738,7 +739,7 @@ mason_lspconfig.setup {
 
 mason_lspconfig.setup_handlers {
   function(server_name)
-    require('lspconfig')[server_name].setup {
+    require("lspconfig")[server_name].setup {
       capabilities = capabilities,
       on_attach = on_attach,
       settings = servers[server_name],
