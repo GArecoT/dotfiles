@@ -1,0 +1,57 @@
+{
+    "prompt_count_cache_12244": {
+        "value": "50",
+        "timestamp": 1689275889,
+        "ttl": 1440
+    },
+    "prompt_count_cache_14532": {
+        "value": "3",
+        "timestamp": 1689195966,
+        "ttl": 1440
+    },
+    "prompt_count_cache_15276": {
+        "value": "1",
+        "timestamp": 1689196729,
+        "ttl": 1440
+    },
+    "prompt_count_cache_17428": {
+        "value": "2",
+        "timestamp": 1689278604,
+        "ttl": 1440
+    },
+    "prompt_count_cache_20432": {
+        "value": "16",
+        "timestamp": 1689197086,
+        "ttl": 1440
+    },
+    "prompt_count_cache_2152": {
+        "value": "108",
+        "timestamp": 1689277973,
+        "ttl": 1440
+    },
+    "prompt_count_cache_2308": {
+        "value": "2",
+        "timestamp": 1689195379,
+        "ttl": 1440
+    },
+    "prompt_count_cache_26756": {
+        "value": "14",
+        "timestamp": 1689281560,
+        "ttl": 1440
+    },
+    "prompt_count_cache_29680": {
+        "value": "65",
+        "timestamp": 1689278929,
+        "ttl": 1440
+    },
+    "prompt_count_cache_5292": {
+        "value": "1",
+        "timestamp": 1689277163,
+        "ttl": 1440
+    },
+    "upgrade_check": {
+        "value": "v17.9.0",
+        "timestamp": 1689196123,
+        "ttl": 10080
+    }
+}
