@@ -23,12 +23,39 @@ komorebic ensure-named-workspaces 0 I II III IV V
 komorebic named-workspace-layout I bsp
 
 # Set the gaps around the edge of the screen for a workspace
-komorebic named-workspace-padding I 2
+komorebic named-workspace-padding I 1
 # Set the gaps between the containers for a workspace
-komorebic named-workspace-container-padding I 2
+komorebic named-workspace-container-padding I 1
 
 komorebic focus-follows-mouse enable
 komorebic mouse-follows-focus enable
+
+komorebic.exe container-padding 0 1 1
+komorebic.exe workspace-padding 0 1 1
+
+komorebic.exe container-padding 0 2 1
+komorebic.exe workspace-padding 0 2 1
+
+komorebic.exe container-padding 0 3 1
+komorebic.exe workspace-padding 0 3 1
+
+komorebic.exe container-padding 0 4 1
+komorebic.exe workspace-padding 0 4 1
+
+komorebic.exe container-padding 0 5 1
+komorebic.exe workspace-padding 0 5 1
+
+komorebic.exe container-padding 0 6 1
+komorebic.exe workspace-padding 0 6 1
+
+komorebic.exe container-padding 0 7 1
+komorebic.exe workspace-padding 0 7 1
+
+komorebic.exe container-padding 0 8 1
+komorebic.exe workspace-padding 0 8 1
+
+komorebic.exe container-padding 0 9 1
+komorebic.exe workspace-padding 0 9 1
 
 # You can assign specific apps to named workspaces
 # komorebic named-workspace-rule exe "Firefox.exe" III
