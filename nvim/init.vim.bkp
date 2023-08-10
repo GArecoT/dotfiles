@@ -1,0 +1,98 @@
+syntax on
+filetype plugin on
+
+set noerrorbells
+set tabstop=4 softtabstop=4
+set shiftwidth=4
+set expandtab
+set smartindent
+set nu
+set nowrap
+set incsearch
+set relativenumber
+set mouse=a
+set clipboard=unnamed
+
+call plug#begin()
+Plug 'junegunn/fzf.vim'
+Plug 'mg979/vim-visual-multi'
+Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-surround'
+Plug 'scrooloose/nerdtree'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'mattn/emmet-vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'lyuts/vim-rtags'
+Plug 'Yggdroot/indentLine'
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'webdevel/tabulous'
+Plug 'sheerun/vim-polyglot'
+Plug 'stevearc/vim-arduino'
+"Plug 'vim-scripts/AutoComplPop'
+Plug 'stevearc/vim-arduino'
+Plug 'OmniSharp/omnisharp-vim'
+Plug 'jose-elias-alvarez/null-ls.nvim'
+Plug 'AndrewRadev/tagalong.vim'
+"Plug 'pangloss/vim-javascript'
+"Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
+"Plug 'powerline/powerline'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'ap/vim-css-color'
+call plug#end()
+
+let g:tagalong_verbose = 1
+
+let g:dracula_colorterm = 0
+colorscheme dracula
+set t_Co=256
+set background=dark
+"set completeopt-=preview
+
+let python_highlight_all=1
+let g:ale_fix_on_save = 1
+"let g:ale_completion_enabled = 1
+let g:ale_echo_msg_error_str = ''
+let g:ale_echo_msg_warning_str = ''
+let g:ale_echo_msg_format = ''
+let g:airline#extensions#ale#enabled = 1
+let g:javascript_plugin_jsdoc = 1
+let g:javascript_plugin_ngdoc = 1
+let g:javascript_plugin_flow = 1
+"let g:ycm_add_preview_to_completeopt = 0
+let g:airline_extensions = []
+
+map <silent> <C-a> :NERDTreeToggle<CR>
+map <silent> <C-c> :set relativenumber!<CR>
+map <silent> <C-s> :vsplit<CR>
+highlight ALEWarning ctermbg=red
+"Fechar coisas automaticamente
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
+
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+inoremap <expr> <Tab> coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
+inoremap <expr> <S-Tab> coc#pum#visible() ? coc#pum#prev(1) : "\<S-Tab>"
+
+set foldlevel=99
+set fdm=indent
+
+
+lua << EOF
+-- this is for diagnositcs signs on the line number column
+-- use this to beautify the plain E W signs to more fun ones
+-- !important nerdfonts needs to be setup for this to work in your terminal
+local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " } 
+for type, icon in pairs(signs) do
+    local hl = "DiagnosticSign" .. type
+    vim.fn.sign_define(hl, { text = icon, texthl= hl, numhl = hl })
+end
+EOF
