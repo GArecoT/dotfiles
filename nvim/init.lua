@@ -22,7 +22,7 @@ require('packer').startup(function(use)
       "SmiteshP/nvim-navic",
       "MunifTanjim/nui.nvim",
       "numToStr/Comment.nvim",                                             -- Optional
-      "nvim-telescope/telescope.nvim"                                      -- Optional
+      "nvim-telescope/telescope.nvim",                                     -- Optional
     }
   }                                                                        --Navegação entre blocos
   use 'windwp/nvim-ts-autotag'
@@ -586,14 +586,17 @@ navbuddy.setup {
 
     ["<Left>"] = actions.parent(),         -- Move to left panel
     ["<Right>"] = actions.children()       -- Move to right panel
+  },
+  lsp = {
+    auto_attach = true,
   }
 }
 local language_servers = require("lspconfig").util.available_servers() -- or list servers manually like {'gopls', 'clangd'}
 for _, ls in ipairs(language_servers) do
   require('lspconfig')[ls].setup({
-    on_attach = function(client, bufnr)
-      navbuddy.attach(client, bufnr)
-    end,
+    -- on_attach = function(client, bufnr)
+    --   navbuddy.attach(client, bufnr)
+    -- end,
     capabilities = capabilities
     -- you can add other fields for setting up lsp server in this table
   })
@@ -689,9 +692,9 @@ mason_lspconfig.setup_handlers {
     require("lspconfig")[server_name].setup {
       capabilities = capabilities,
       settings = servers[server_name],
-      on_attach = function(client, bufnr)
-        navbuddy.attach(client, bufnr)
-      end
+      -- on_attach = function(client, bufnr)
+      --   navbuddy.attach(client, bufnr)
+      -- end
     }
   end,
 }
@@ -702,9 +705,9 @@ end
 local pid = vim.fn.getpid()
 local omnisharp_bin = "C:/Users/estagio.startup06/AppData/Local/nvim-data/mason/packages/omnisharp-mono/OmniSharp.exe"
 require 'lspconfig'.omnisharp_mono.setup {
-  on_attach = function(client, bufnr)
-    navbuddy.attach(client, bufnr)
-  end,
+  -- on_attach = function(client, bufnr)
+  --   navbuddy.attach(client, bufnr)
+  -- end,
   root_dir = on_cwd,
   cmd = { omnisharp_bin, "--languageserver", "--hostPID", tostring(pid) },
   ...

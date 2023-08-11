@@ -482,3 +482,257 @@
 [ERROR 13/07/2023 16:03:26] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
 [INFO  13/07/2023 16:03:27] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
 [ERROR 13/07/2023 16:03:27] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 13/07/2023 17:01:24] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  13/07/2023 17:01:25] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 13/07/2023 17:01:25] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 13/07/2023 17:03:04] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  13/07/2023 17:03:05] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 13/07/2023 17:03:05] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 13/07/2023 17:03:13] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  13/07/2023 17:03:14] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 13/07/2023 17:03:14] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 13/07/2023 17:03:19] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  13/07/2023 17:03:19] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 13/07/2023 17:03:19] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 13/07/2023 17:13:16] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  13/07/2023 17:13:17] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 13/07/2023 17:13:17] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 13/07/2023 17:22:49] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  13/07/2023 17:22:52] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 13/07/2023 17:22:52] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 13/07/2023 17:23:30] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  13/07/2023 17:23:31] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 13/07/2023 17:23:31] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 13/07/2023 17:25:54] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  13/07/2023 17:25:55] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 13/07/2023 17:25:55] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 13/07/2023 17:26:24] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  13/07/2023 17:26:24] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 13/07/2023 17:26:25] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 14/07/2023 08:33:44] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  14/07/2023 08:33:45] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 14/07/2023 08:33:45] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 14/07/2023 08:36:53] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  14/07/2023 08:36:54] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 14/07/2023 08:36:55] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 14/07/2023 09:35:37] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  14/07/2023 09:35:38] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 14/07/2023 09:35:38] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 14/07/2023 12:10:09] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  14/07/2023 12:10:09] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 14/07/2023 12:10:09] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 20/07/2023 14:13:01] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  20/07/2023 14:13:04] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 20/07/2023 14:13:04] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 20/07/2023 15:15:35] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  20/07/2023 15:15:36] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 20/07/2023 15:15:36] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 24/07/2023 10:03:46] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  24/07/2023 10:03:48] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 24/07/2023 10:03:48] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 24/07/2023 10:23:53] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  24/07/2023 10:23:55] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 24/07/2023 10:23:55] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[INFO  24/07/2023 10:51:01] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=rust-analyzer) {}
+[INFO  24/07/2023 10:51:10] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=rust-analyzer)
+[ERROR 26/07/2023 07:34:00] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  26/07/2023 07:34:05] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 26/07/2023 07:34:05] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 26/07/2023 08:22:02] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  26/07/2023 08:22:03] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 26/07/2023 08:22:03] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 26/07/2023 08:23:07] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  26/07/2023 08:23:07] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 26/07/2023 08:23:07] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 26/07/2023 08:24:25] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  26/07/2023 08:24:49] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 26/07/2023 08:24:49] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 26/07/2023 08:26:30] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  26/07/2023 08:26:31] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 26/07/2023 08:26:31] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 26/07/2023 08:30:08] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  26/07/2023 08:30:09] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 26/07/2023 08:30:09] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 26/07/2023 08:31:51] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  26/07/2023 08:31:52] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 26/07/2023 08:31:52] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 26/07/2023 08:32:03] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  26/07/2023 08:32:04] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 26/07/2023 08:32:04] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 26/07/2023 09:55:00] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  26/07/2023 09:55:01] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 26/07/2023 09:55:01] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 27/07/2023 17:31:04] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  27/07/2023 17:31:11] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 27/07/2023 17:31:11] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 31/07/2023 11:11:36] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  31/07/2023 11:11:45] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 31/07/2023 11:11:45] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 07/08/2023 16:12:51] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  07/08/2023 16:12:54] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 07/08/2023 16:12:54] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 07/08/2023 16:17:11] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  07/08/2023 16:17:12] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 07/08/2023 16:17:12] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 07/08/2023 17:27:21] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  07/08/2023 17:27:23] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 07/08/2023 17:27:23] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 08/08/2023 08:03:02] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  08/08/2023 08:03:03] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 08/08/2023 08:03:03] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 08/08/2023 09:07:31] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  08/08/2023 09:07:32] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 08/08/2023 09:07:32] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 08/08/2023 09:09:52] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  08/08/2023 09:09:53] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 08/08/2023 09:09:53] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 08/08/2023 09:10:11] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  08/08/2023 09:10:12] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 08/08/2023 09:10:12] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 08/08/2023 09:10:36] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  08/08/2023 09:10:37] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 08/08/2023 09:10:37] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 09/08/2023 10:36:10] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  09/08/2023 10:36:15] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 09/08/2023 10:36:15] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 09/08/2023 10:44:02] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  09/08/2023 10:44:03] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 09/08/2023 10:44:03] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 09/08/2023 13:08:00] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  09/08/2023 13:08:00] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 09/08/2023 13:08:00] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 09/08/2023 13:08:23] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  09/08/2023 13:08:24] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 09/08/2023 13:08:24] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 09/08/2023 15:16:44] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  09/08/2023 15:16:46] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 09/08/2023 15:16:46] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 10/08/2023 08:24:26] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  10/08/2023 08:24:27] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 10/08/2023 08:24:27] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 10/08/2023 09:25:39] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  10/08/2023 09:25:39] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 10/08/2023 09:25:39] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 10/08/2023 09:34:32] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  10/08/2023 09:34:33] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 10/08/2023 09:34:33] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 10/08/2023 09:59:04] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  10/08/2023 09:59:05] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 10/08/2023 09:59:05] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 10/08/2023 10:15:30] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  10/08/2023 10:15:31] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 10/08/2023 10:15:31] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 10/08/2023 10:18:19] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  10/08/2023 10:18:20] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 10/08/2023 10:18:20] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 10/08/2023 10:25:43] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  10/08/2023 10:25:48] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 10/08/2023 10:25:48] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 10/08/2023 10:29:25] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  10/08/2023 10:29:26] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 10/08/2023 10:29:26] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 10/08/2023 10:30:20] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  10/08/2023 10:30:21] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 10/08/2023 10:30:21] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 10/08/2023 10:31:16] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  10/08/2023 10:31:16] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 10/08/2023 10:31:16] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 10/08/2023 10:32:26] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  10/08/2023 10:32:26] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 10/08/2023 10:32:26] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 10/08/2023 10:33:57] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  10/08/2023 10:33:58] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 10/08/2023 10:33:58] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 10/08/2023 10:36:27] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  10/08/2023 10:36:34] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 10/08/2023 10:36:34] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 10/08/2023 10:37:57] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  10/08/2023 10:37:57] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 10/08/2023 10:37:57] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 10/08/2023 10:40:46] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  10/08/2023 10:40:46] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 10/08/2023 10:40:46] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 10/08/2023 10:42:12] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  10/08/2023 10:42:13] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 10/08/2023 10:42:13] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 10/08/2023 10:43:54] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  10/08/2023 10:43:55] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 10/08/2023 10:43:55] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 10/08/2023 10:45:55] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  10/08/2023 10:45:55] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 10/08/2023 10:45:56] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 10/08/2023 10:47:19] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  10/08/2023 10:47:20] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 10/08/2023 10:47:20] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 10/08/2023 10:49:49] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  10/08/2023 10:49:50] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 10/08/2023 10:49:50] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 10/08/2023 10:50:12] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  10/08/2023 10:50:12] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 10/08/2023 10:50:12] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 10/08/2023 10:50:25] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  10/08/2023 10:50:26] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 10/08/2023 10:50:26] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 10/08/2023 10:52:42] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  10/08/2023 10:52:42] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 10/08/2023 10:52:42] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 10/08/2023 10:54:38] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  10/08/2023 10:54:39] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 10/08/2023 10:54:39] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 10/08/2023 10:55:54] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  10/08/2023 10:55:55] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 10/08/2023 10:55:55] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 10/08/2023 11:01:21] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  10/08/2023 11:01:21] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 10/08/2023 11:01:21] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 10/08/2023 11:02:20] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  10/08/2023 11:02:21] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 10/08/2023 11:02:21] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 10/08/2023 11:02:24] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  10/08/2023 11:02:27] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 10/08/2023 11:02:27] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 10/08/2023 11:04:23] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  10/08/2023 11:04:24] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 10/08/2023 11:04:24] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 10/08/2023 11:04:38] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  10/08/2023 11:04:38] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 10/08/2023 11:04:38] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 10/08/2023 11:21:32] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  10/08/2023 11:21:32] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 10/08/2023 11:21:32] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 11/08/2023 12:34:37] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  11/08/2023 12:34:41] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 11/08/2023 12:34:42] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 11/08/2023 12:34:57] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  11/08/2023 12:34:58] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 11/08/2023 12:34:58] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 11/08/2023 12:48:12] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  11/08/2023 12:48:12] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 11/08/2023 12:48:12] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 11/08/2023 12:50:46] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  11/08/2023 12:50:46] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 11/08/2023 12:50:46] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 11/08/2023 12:51:12] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  11/08/2023 12:51:13] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 11/08/2023 12:51:13] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 11/08/2023 12:53:39] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  11/08/2023 12:53:40] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 11/08/2023 12:53:40] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 11/08/2023 12:56:26] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  11/08/2023 12:56:27] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 11/08/2023 12:56:27] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 11/08/2023 12:58:24] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  11/08/2023 12:58:24] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 11/08/2023 12:58:24] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 11/08/2023 13:00:14] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  11/08/2023 13:00:15] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 11/08/2023 13:00:15] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 11/08/2023 13:00:48] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  11/08/2023 13:00:48] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 11/08/2023 13:00:48] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 11/08/2023 13:05:36] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  11/08/2023 13:05:36] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 11/08/2023 13:05:37] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
+[ERROR 11/08/2023 13:05:57] ...on-lspconfig.nvim/lua/mason-lspconfig/lspconfig_hook.lua:84: Failed to expand cmd path vls { "v", "ls" }
+[INFO  11/08/2023 13:05:58] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=gopls) {}
+[ERROR 11/08/2023 13:05:58] ...acker\start\mason.nvim/lua/mason-core/installer/init.lua:249: Installation failed for Package(name=gopls) error=spawn: go failed with exit code - and signal -. go is not executable
