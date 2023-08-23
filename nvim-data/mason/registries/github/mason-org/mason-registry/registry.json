@@ -149,7 +149,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:npm/alex@11.0.0"
+      "id": "pkg:npm/alex@11.0.1"
     },
     "bin": {
       "alex": "npm:alex"
@@ -171,7 +171,7 @@
     "source": {
       "id": "pkg:npm/%40angular/language-server@16.1.8",
       "extra_packages": [
-        "typescript@4.8.2"
+        "typescript@5.1.3"
       ],
       "version_overrides": [
         {
@@ -271,7 +271,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:pypi/ansible-lint@6.17.2",
+      "id": "pkg:pypi/ansible-lint@6.18.0",
       "supported_platforms": [
         "unix"
       ]
@@ -314,7 +314,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/forcedotcom/salesforcedx-vscode@v58.9.1",
+      "id": "pkg:github/forcedotcom/salesforcedx-vscode@v58.11.0",
       "asset": {
         "file": "salesforcedx-vscode-apex-{{ version | strip_prefix \"v\" }}.vsix"
       }
@@ -334,7 +334,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/arduino/arduino-language-server@0.7.4",
+      "id": "pkg:github/arduino/arduino-language-server@0.7.5",
       "asset": [
         {
           "target": [
@@ -396,6 +396,58 @@
     }
   },
   {
+    "name": "asmfmt",
+    "description": "Go Assembler Formatter\nThis will format your assembler code in a similar way that gofmt formats your Go code.\n",
+    "homepage": "https://github.com/klauspost/asmfmt",
+    "licenses": [
+      "MIT"
+    ],
+    "languages": [
+      "Assembly"
+    ],
+    "categories": [
+      "Formatter"
+    ],
+    "source": {
+      "id": "pkg:github/klauspost/asmfmt@v1.3.2",
+      "asset": [
+        {
+          "target": "darwin_arm64",
+          "file": "asmfmt-OSX_arm64_{{ version | strip_prefix \"v\" }}.tar.gz",
+          "bin": "asmfmt"
+        },
+        {
+          "target": "darwin_x64",
+          "file": "asmfmt-OSX_x86_64_{{ version | strip_prefix \"v\" }}.tar.gz",
+          "bin": "asmfmt"
+        },
+        {
+          "target": "linux_arm64",
+          "file": "asmfmt-Linux_arm64_{{ version | strip_prefix \"v\" }}.tar.gz",
+          "bin": "asmfmt"
+        },
+        {
+          "target": "linux_x64",
+          "file": "asmfmt-Linux_x86_64_{{ version | strip_prefix \"v\" }}.tar.gz",
+          "bin": "asmfmt"
+        },
+        {
+          "target": "win_arm64",
+          "file": "asmfmt-Windows_arm64_{{ version | strip_prefix \"v\" }}.zip",
+          "bin": "asmfmt.exe"
+        },
+        {
+          "target": "win_x64",
+          "file": "asmfmt-Windows_x86_64_{{ version | strip_prefix \"v\" }}.zip",
+          "bin": "asmfmt.exe"
+        }
+      ]
+    },
+    "bin": {
+      "asmfmt": "{{source.asset.bin}}"
+    }
+  },
+  {
     "name": "astro-language-server",
     "description": "The Astro language server, its structure is inspired by the Svelte Language Server.",
     "homepage": "https://github.com/withastro/language-tools",
@@ -409,7 +461,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/%40astrojs/language-server@2.2.0",
+      "id": "pkg:npm/%40astrojs/language-server@2.3.0",
       "extra_packages": [
         "typescript"
       ]
@@ -684,7 +736,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:npm/blade-formatter@1.37.0"
+      "id": "pkg:npm/blade-formatter@1.37.1"
     },
     "bin": {
       "blade-formatter": "npm:blade-formatter"
@@ -877,7 +929,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:github/bazelbuild/buildtools@v6.1.2",
+      "id": "pkg:github/bazelbuild/buildtools@v6.3.2",
       "asset": [
         {
           "target": "darwin_x64",
@@ -1016,7 +1068,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:pypi/cfn-lint@0.79.6"
+      "id": "pkg:pypi/cfn-lint@0.79.7"
     },
     "bin": {
       "cfn-lint": "pypi:cfn-lint"
@@ -1575,7 +1627,7 @@
       "DAP"
     ],
     "source": {
-      "id": "pkg:github/microsoft/vscode-cpptools@v1.16.3",
+      "id": "pkg:github/microsoft/vscode-cpptools@v1.17.4",
       "asset": [
         {
           "target": "darwin_x64",
@@ -1697,7 +1749,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:nuget/csharp-ls@0.8.0"
+      "id": "pkg:nuget/csharp-ls@0.9.0"
     },
     "bin": {
       "csharp-ls": "nuget:csharp-ls"
@@ -1735,7 +1787,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:npm/cspell@7.0.0"
+      "id": "pkg:npm/cspell@7.0.1"
     },
     "bin": {
       "cspell": "npm:cspell"
@@ -1887,7 +1939,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/custom-elements-languageserver@0.0.3"
+      "id": "pkg:npm/custom-elements-languageserver@0.0.8"
     },
     "bin": {
       "custom-elements-languageserver": "npm:custom-elements-languageserver"
@@ -1973,7 +2025,7 @@
       "Runtime"
     ],
     "source": {
-      "id": "pkg:github/denoland/deno@v1.36.1",
+      "id": "pkg:github/denoland/deno@v1.36.2",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -2271,7 +2323,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:github/editorconfig-checker/editorconfig-checker@2.7.0",
+      "id": "pkg:github/editorconfig-checker/editorconfig-checker@2.7.1",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -2352,7 +2404,7 @@
       "DAP"
     ],
     "source": {
-      "id": "pkg:github/elixir-lsp/elixir-ls@v0.15.1",
+      "id": "pkg:github/elixir-lsp/elixir-ls@v0.16.0",
       "asset": [
         {
           "target": "unix",
@@ -2930,7 +2982,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:nuget/fsautocomplete@0.61.1"
+      "id": "pkg:nuget/fsautocomplete@0.62.0"
     },
     "schemas": {
       "lsp": "vscode:https://raw.githubusercontent.com/ionide/ionide-vscode-fsharp/main/release/package.json"
@@ -2991,7 +3043,7 @@
     "languages": [],
     "categories": [],
     "source": {
-      "id": "pkg:github/cli/cli@v2.32.1",
+      "id": "pkg:github/cli/cli@v2.33.0",
       "asset": [
         {
           "target": "darwin_x64",
@@ -3184,7 +3236,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:npm/%40glint/core@1.0.2",
+      "id": "pkg:npm/%40glint/core@1.1.0",
       "extra_packages": [
         "typescript"
       ]
@@ -3311,7 +3363,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:github/incu6us/goimports-reviser@v3.3.1",
+      "id": "pkg:github/incu6us/goimports-reviser@v3.4.1",
       "asset": [
         {
           "target": "darwin_x64",
@@ -3393,7 +3445,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:github/golangci/golangci-lint@v1.54.1",
+      "id": "pkg:github/golangci/golangci-lint@v1.54.2",
       "asset": [
         {
           "target": "linux_armv6l",
@@ -3538,7 +3590,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:golang/golang.org/x/tools/gopls@v0.13.1"
+      "id": "pkg:golang/golang.org/x/tools/gopls@v0.13.2"
     },
     "bin": {
       "gopls": "golang:gopls"
@@ -3815,7 +3867,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:generic/haskell/haskell-language-server@2.0.0.0",
+      "id": "pkg:generic/haskell/haskell-language-server@2.1.0.0",
       "build": [
         {
           "target": "unix",
@@ -3828,9 +3880,10 @@
             "wrapper": "bin/haskell-language-server-wrapper",
             "server_8_10_7": "bin/haskell-language-server-8.10.7",
             "server_9_0_2": "bin/haskell-language-server-9.0.2",
-            "server_9_2_7": "bin/haskell-language-server-9.2.7",
+            "server_9_2_8": "bin/haskell-language-server-9.2.8",
             "server_9_4_5": "bin/haskell-language-server-9.4.5",
-            "server_9_6_1": "bin/haskell-language-server-9.6.1"
+            "server_9_4_6": "bin/haskell-language-server-9.4.6",
+            "server_9_6_2": "bin/haskell-language-server-9.6.2"
           }
         },
         {
@@ -3844,9 +3897,10 @@
             "wrapper": "haskell-language-server-wrapper.exe",
             "server_8_10_7": "haskell-language-server-8.10.7.exe",
             "server_9_0_2": "haskell-language-server-9.0.2.exe",
-            "server_9_2_7": "haskell-language-server-9.2.7.exe",
+            "server_9_2_8": "haskell-language-server-9.2.8.exe",
             "server_9_4_5": "haskell-language-server-9.4.5.exe",
-            "server_9_6_1": "haskell-language-server-9.6.1.exe"
+            "server_9_4_6": "haskell-language-server-9.4.6.exe",
+            "server_9_6_2": "haskell-language-server-9.6.2.exe"
           }
         }
       ]
@@ -3855,9 +3909,10 @@
       "haskell-language-server-wrapper": "{{source.build.bin.wrapper}}",
       "haskell-language-server-8.10.7": "{{source.build.bin.server_8_10_7}}",
       "haskell-language-server-9.0.2": "{{ source.build.bin.server_9_0_2 | take_if_not(is_platform('darwin_arm64')) }}",
-      "haskell-language-server-9.2.7": "{{source.build.bin.server_9_2_7}}",
+      "haskell-language-server-9.2.8": "{{source.build.bin.server_9_2_8}}",
       "haskell-language-server-9.4.5": "{{source.build.bin.server_9_4_5}}",
-      "haskell-language-server-9.6.1": "{{source.build.bin.server_9_6_1}}"
+      "haskell-language-server-9.4.6": "{{source.build.bin.server_9_4_6}}",
+      "haskell-language-server-9.6.2": "{{source.build.bin.server_9_6_2}}"
     }
   },
   {
@@ -4262,7 +4317,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:github/candid82/joker@v1.2.0",
+      "id": "pkg:github/candid82/joker@v1.3.0",
       "asset": [
         {
           "target": [
@@ -4542,6 +4597,99 @@
     },
     "bin": {
       "julia-lsp": "{{source.asset.bin}}"
+    }
+  },
+  {
+    "name": "kcl",
+    "description": "KCL is an open-source, constraint-based record and functional language that enhances the writing of complex\nconfigurations, including those for cloud-native scenarios.\n",
+    "homepage": "https://kcl-lang.io",
+    "licenses": [
+      "Apache-2.0"
+    ],
+    "languages": [
+      "KCL"
+    ],
+    "categories": [
+      "Compiler",
+      "Formatter",
+      "LSP",
+      "Linter"
+    ],
+    "source": {
+      "id": "pkg:github/kcl-lang/kcl@v0.5.5",
+      "asset": [
+        {
+          "target": "darwin_x64",
+          "file": "kclvm-{{version}}-darwin-amd64.tar.gz",
+          "bin": {
+            "kcl": "exec:kclvm/bin/kcl",
+            "kcl_doc": "exec:kclvm/bin/kcl-doc",
+            "kcl_fmt": "exec:kclvm/bin/kcl-fmt",
+            "kcl_lint": "exec:kclvm/bin/kcl-lint",
+            "kcl_plugin": "exec:kclvm/bin/kcl-plugin",
+            "kcl_test": "exec:kclvm/bin/kcl-test",
+            "kcvlm": "exec:kclvm/bin/kclvm",
+            "kcl_vet": "exec:kclvm/bin/kcl-vet",
+            "kcl_language_server": "exec:kclvm/bin/kcl-language-server"
+          }
+        },
+        {
+          "target": "darwin_arm64",
+          "file": "kclvm-{{version}}-darwin-arm64.tar.gz",
+          "bin": {
+            "kcl": "exec:kclvm/bin/kcl",
+            "kcl_doc": "exec:kclvm/bin/kcl-doc",
+            "kcl_fmt": "exec:kclvm/bin/kcl-fmt",
+            "kcl_lint": "exec:kclvm/bin/kcl-lint",
+            "kcl_plugin": "exec:kclvm/bin/kcl-plugin",
+            "kcl_test": "exec:kclvm/bin/kcl-test",
+            "kcvlm": "exec:kclvm/bin/kclvm",
+            "kcl_vet": "exec:kclvm/bin/kcl-vet",
+            "kcl_language_server": "exec:kclvm/bin/kcl-language-server"
+          }
+        },
+        {
+          "target": "linux_x64_gnu",
+          "file": "kclvm-{{version}}-linux-amd64.tar.gz",
+          "bin": {
+            "kcl": "exec:kclvm/bin/kcl",
+            "kcl_doc": "exec:kclvm/bin/kcl-doc",
+            "kcl_fmt": "exec:kclvm/bin/kcl-fmt",
+            "kcl_lint": "exec:kclvm/bin/kcl-lint",
+            "kcl_plugin": "exec:kclvm/bin/kcl-plugin",
+            "kcl_test": "exec:kclvm/bin/kcl-test",
+            "kcvlm": "exec:kclvm/bin/kclvm",
+            "kcl_vet": "exec:kclvm/bin/kcl-vet",
+            "kcl_language_server": "exec:kclvm/bin/kcl-language-server"
+          }
+        },
+        {
+          "target": "win_x64",
+          "file": "kclvm-{{version}}-windows.zip",
+          "bin": {
+            "kcl": "bin/kcl.exe",
+            "kcl_doc": "bin/kcl-doc.exe",
+            "kcl_fmt": "bin/kcl-fmt.exe",
+            "kcl_lint": "bin/kcl-lint.exe",
+            "kcl_plugin": "bin/kcl-plugin.exe",
+            "kcl_test": "bin/kcl-test.exe",
+            "kcvlm": "bin/kclvm.exe",
+            "kcl_vet": "bin/kcl-vet.exe",
+            "kcl_language_server": "bin/kcl-language-server.exe"
+          }
+        }
+      ]
+    },
+    "bin": {
+      "kcl": "{{source.asset.bin.kcl}}",
+      "kcl-doc": "{{source.asset.bin.kcl_doc}}",
+      "kcl-fmt": "{{source.asset.bin.kcl_fmt}}",
+      "kcl-lint": "{{source.asset.bin.kcl_lint}}",
+      "kcl-plugin": "{{source.asset.bin.kcl_plugin}}",
+      "kcl-test": "{{source.asset.bin.kcl_test}}",
+      "kcvlm": "{{source.asset.bin.kcvlm}}",
+      "kcl-vet": "{{source.asset.bin.kcl_vet}}",
+      "kcl-language-server": "{{source.asset.bin.kcl_language_server}}"
     }
   },
   {
@@ -5148,7 +5296,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/mathworks/MATLAB-language-server@2352ec9ee1ab1e60eb3e4e87e1011caa33963bae",
+      "id": "pkg:github/mathworks/MATLAB-language-server@94cac1b958b27b234ceee87adf82f443872ede49",
       "build": {
         "run": "npm install\nnpm run package\n"
       }
@@ -5356,7 +5504,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:pypi/mypy@1.5.0"
+      "id": "pkg:pypi/mypy@1.5.1"
     },
     "bin": {
       "mypy": "pypi:mypy"
@@ -5430,6 +5578,56 @@
     }
   },
   {
+    "name": "nextls",
+    "description": "NextLS is the language server for Elixir that just works.",
+    "homepage": "https://www.elixir-tools.dev/next-ls/",
+    "licenses": [
+      "MIT"
+    ],
+    "languages": [
+      "Elixir"
+    ],
+    "categories": [
+      "LSP"
+    ],
+    "source": {
+      "id": "pkg:github/elixir-tools/next-ls@v0.10.2",
+      "asset": [
+        {
+          "target": "darwin_x64",
+          "file": "next_ls_darwin_amd64"
+        },
+        {
+          "target": "darwin_arm64",
+          "file": "next_ls_darwin_arm64"
+        },
+        {
+          "target": "linux_x64_gnu",
+          "file": "next_ls_linux_amd64"
+        },
+        {
+          "target": "linux_x64",
+          "file": "next_ls_linux_amd64_musl"
+        },
+        {
+          "target": "linux_arm64_gnu",
+          "file": "next_ls_linux_arm64"
+        },
+        {
+          "target": "linux_arm64",
+          "file": "next_ls_linux_arm64_musl"
+        },
+        {
+          "target": "win_x64",
+          "file": "next_ls_windows_amd64.exe"
+        }
+      ]
+    },
+    "bin": {
+      "nextls": "{{source.asset.file}}"
+    }
+  },
+  {
     "name": "nginx-language-server",
     "description": "A language server for nginx configuration files.",
     "homepage": "https://github.com/pappasam/nginx-language-server",
@@ -5487,7 +5685,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:cargo/nil@2022-12-01?repository_url=https://github.com/oxalica/nil"
+      "id": "pkg:cargo/nil@2023-08-09?repository_url=https://github.com/oxalica/nil"
     },
     "bin": {
       "nil": "cargo:nil"
@@ -5507,7 +5705,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/nim-lang/langserver@16ff141376c0430b81dbd13fbbe3740ba98117c4",
+      "id": "pkg:github/nim-lang/langserver@56c35448a6e979ad2b5734b3beb2f316d9a7214f",
       "build": [
         {
           "target": "unix",
@@ -5642,7 +5840,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:opam/ocaml-lsp-server@1.15.1-5.0"
+      "id": "pkg:opam/ocaml-lsp-server@1.16.2"
     },
     "bin": {
       "ocamllsp": "opam:ocamllsp"
@@ -5993,7 +6191,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:github/PHP-CS-Fixer/PHP-CS-Fixer@v3.22.0",
+      "id": "pkg:github/PHP-CS-Fixer/PHP-CS-Fixer@v3.23.0",
       "asset": {
         "file": "php-cs-fixer.phar"
       }
@@ -6134,7 +6332,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:github/phpstan/phpstan@1.10.28",
+      "id": "pkg:github/phpstan/phpstan@1.10.30",
       "asset": {
         "file": "phpstan.phar"
       }
@@ -6180,7 +6378,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:composer/laravel/pint@v1.10.6"
+      "id": "pkg:composer/laravel/pint@v1.11.0"
     },
     "bin": {
       "pint": "composer:pint"
@@ -6256,7 +6454,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:npm/prettier@3.0.1"
+      "id": "pkg:npm/prettier@3.0.2"
     },
     "bin": {
       "prettier": "npm:prettier"
@@ -6309,7 +6507,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/%40prisma/language-server@5.1.0"
+      "id": "pkg:npm/%40prisma/language-server@5.2.0"
     },
     "bin": {
       "prisma-language-server": "npm:prisma-language-server"
@@ -6387,11 +6585,11 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:github/yoheimuta/protolint@v0.45.0",
+      "id": "pkg:github/yoheimuta/protolint@v0.46.0",
       "asset": [
         {
           "target": "darwin_arm64",
-          "file": "protolint_{{ version | strip_prefix \"v\" }}_Darwin_arm64.tar.gz",
+          "file": "protolint_{{ version | strip_prefix \"v\" }}_darwin_arm64.tar.gz",
           "bin": {
             "protolint": "protolint",
             "protoc_gen_protolint": "protoc-gen-protolint"
@@ -6399,7 +6597,7 @@
         },
         {
           "target": "darwin_x64",
-          "file": "protolint_{{ version | strip_prefix \"v\" }}_Darwin_x86_64.tar.gz",
+          "file": "protolint_{{ version | strip_prefix \"v\" }}_darwin_amd64.tar.gz",
           "bin": {
             "protolint": "protolint",
             "protoc_gen_protolint": "protoc-gen-protolint"
@@ -6407,7 +6605,7 @@
         },
         {
           "target": "linux_arm64",
-          "file": "protolint_{{ version | strip_prefix \"v\" }}_Linux_arm64.tar.gz",
+          "file": "protolint_{{ version | strip_prefix \"v\" }}_linux_arm64.tar.gz",
           "bin": {
             "protolint": "protolint",
             "protoc_gen_protolint": "protoc-gen-protolint"
@@ -6415,7 +6613,7 @@
         },
         {
           "target": "linux_x64",
-          "file": "protolint_{{ version | strip_prefix \"v\" }}_Linux_x86_64.tar.gz",
+          "file": "protolint_{{ version | strip_prefix \"v\" }}_linux_amd64.tar.gz",
           "bin": {
             "protolint": "protolint",
             "protoc_gen_protolint": "protoc-gen-protolint"
@@ -6423,7 +6621,7 @@
         },
         {
           "target": "win_arm64",
-          "file": "protolint_{{ version | strip_prefix \"v\" }}_Windows_arm64.tar.gz",
+          "file": "protolint_{{ version | strip_prefix \"v\" }}_windows_arm64.tar.gz",
           "bin": {
             "protolint": "protolint.exe",
             "protoc_gen_protolint": "protoc-gen-protolint.exe"
@@ -6431,11 +6629,67 @@
         },
         {
           "target": "win_x64",
-          "file": "protolint_{{ version | strip_prefix \"v\" }}_Windows_x86_64.tar.gz",
+          "file": "protolint_{{ version | strip_prefix \"v\" }}_windows_amd64.tar.gz",
           "bin": {
             "protolint": "protolint.exe",
             "protoc_gen_protolint": "protoc-gen-protolint.exe"
           }
+        }
+      ],
+      "version_overrides": [
+        {
+          "constraint": "semver:<=0.45.0",
+          "id": "pkg:github/yoheimuta/protolint@v0.45.0",
+          "asset": [
+            {
+              "target": "darwin_arm64",
+              "file": "protolint_{{ version | strip_prefix \"v\" }}_Darwin_arm64.tar.gz",
+              "bin": {
+                "protolint": "protolint",
+                "protoc_gen_protolint": "protoc-gen-protolint"
+              }
+            },
+            {
+              "target": "darwin_x64",
+              "file": "protolint_{{ version | strip_prefix \"v\" }}_Darwin_x86_64.tar.gz",
+              "bin": {
+                "protolint": "protolint",
+                "protoc_gen_protolint": "protoc-gen-protolint"
+              }
+            },
+            {
+              "target": "linux_arm64",
+              "file": "protolint_{{ version | strip_prefix \"v\" }}_Linux_arm64.tar.gz",
+              "bin": {
+                "protolint": "protolint",
+                "protoc_gen_protolint": "protoc-gen-protolint"
+              }
+            },
+            {
+              "target": "linux_x64",
+              "file": "protolint_{{ version | strip_prefix \"v\" }}_Linux_x86_64.tar.gz",
+              "bin": {
+                "protolint": "protolint",
+                "protoc_gen_protolint": "protoc-gen-protolint"
+              }
+            },
+            {
+              "target": "win_arm64",
+              "file": "protolint_{{ version | strip_prefix \"v\" }}_Windows_arm64.tar.gz",
+              "bin": {
+                "protolint": "protolint.exe",
+                "protoc_gen_protolint": "protoc-gen-protolint.exe"
+              }
+            },
+            {
+              "target": "win_x64",
+              "file": "protolint_{{ version | strip_prefix \"v\" }}_Windows_x86_64.tar.gz",
+              "bin": {
+                "protolint": "protolint.exe",
+                "protoc_gen_protolint": "protoc-gen-protolint.exe"
+              }
+            }
+          ]
         }
       ]
     },
@@ -6458,7 +6712,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:composer/vimeo/psalm@5.14.1"
+      "id": "pkg:composer/vimeo/psalm@5.15.0"
     },
     "bin": {
       "psalm": "composer:psalm",
@@ -6740,7 +6994,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/pyright@1.1.321"
+      "id": "pkg:npm/pyright@1.1.324"
     },
     "schemas": {
       "lsp": "vscode:https://raw.githubusercontent.com/microsoft/pyright/{{version}}/packages/vscode-pyright/package.json"
@@ -7193,7 +7447,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:gem/rubocop@1.55.1"
+      "id": "pkg:gem/rubocop@1.56.0"
     },
     "bin": {
       "rubocop": "gem:rubocop"
@@ -7213,7 +7467,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:gem/ruby-lsp@0.8.0"
+      "id": "pkg:gem/ruby-lsp@0.8.1"
     },
     "bin": {
       "ruby-lsp": "gem:ruby-lsp"
@@ -7294,7 +7548,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:pypi/ruff-lsp@0.0.35"
+      "id": "pkg:pypi/ruff-lsp@0.0.37"
     },
     "bin": {
       "ruff-lsp": "pypi:ruff-lsp"
@@ -7314,7 +7568,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:pypi/ruff@0.0.284"
+      "id": "pkg:pypi/ruff@0.0.285"
     },
     "bin": {
       "ruff": "pypi:ruff"
@@ -7355,7 +7609,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/rust-lang/rust-analyzer@2023-08-07",
+      "id": "pkg:github/rust-lang/rust-analyzer@2023-08-21",
       "asset": [
         {
           "target": "linux_x64_gnu",
@@ -7465,7 +7719,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:npm/rustywind@0.17.0"
+      "id": "pkg:npm/rustywind@0.19.0"
     },
     "bin": {
       "rustywind": "npm:rustywind"
@@ -7555,7 +7809,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:pypi/semgrep@1.35.0",
+      "id": "pkg:pypi/semgrep@1.36.0",
       "supported_platforms": [
         "unix"
       ]
@@ -7765,7 +8019,7 @@
       "Compiler"
     ],
     "source": {
-      "id": "pkg:github/shader-slang/slang@v2023.1.1",
+      "id": "pkg:github/shader-slang/slang@v2023.2.1",
       "asset": [
         {
           "target": "linux_x64_gnu",
@@ -7861,7 +8115,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/awslabs/smithy-language-server@e0aef832d6a20edab2b39e1b82102fd1b468d12a",
+      "id": "pkg:github/awslabs/smithy-language-server@da43a443203457d456e394f1272899295b3ed600",
       "build": {
         "run": "./gradlew --no-daemon build"
       }
@@ -8018,7 +8272,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:npm/solhint@3.5.1"
+      "id": "pkg:npm/solhint@3.6.2"
     },
     "bin": {
       "solhint": "npm:solhint"
@@ -8139,7 +8393,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:gem/sorbet@0.5.10958",
+      "id": "pkg:gem/sorbet@0.5.10983",
       "supported_platforms": [
         "unix"
       ]
@@ -8165,7 +8419,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:pypi/sourcery-cli@1.7.0"
+      "id": "pkg:pypi/sourcery-cli@1.8.0"
     },
     "schemas": {
       "lsp": "vscode:https://raw.githubusercontent.com/swift-server/vscode-swift/main/package.json"
@@ -8235,7 +8489,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:pypi/sqlfluff@2.2.1"
+      "id": "pkg:pypi/sqlfluff@2.3.0"
     },
     "bin": {
       "sqlfluff": "pypi:sqlfluff"
@@ -8275,7 +8529,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/sql-language-server@1.6.0"
+      "id": "pkg:npm/sql-language-server@1.7.0"
     },
     "bin": {
       "sql-language-server": "npm:sql-language-server"
@@ -8343,7 +8597,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:gem/standard@1.30.1"
+      "id": "pkg:gem/standard@1.31.0"
     },
     "bin": {
       "standardrb": "gem:standardrb"
@@ -8409,7 +8663,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:npm/stylelint@15.10.2"
+      "id": "pkg:npm/stylelint@15.10.3"
     },
     "bin": {
       "stylelint": "npm:stylelint"
@@ -8789,7 +9043,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/latex-lsp/texlab@v5.9.0",
+      "id": "pkg:github/latex-lsp/texlab@v5.9.2",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -8943,6 +9197,56 @@
     }
   },
   {
+    "name": "thriftls",
+    "description": "thriftls is a Thrift language server. It provides IDE features\nto any LSP-compatible editor.\n",
+    "homepage": "https://github.com/joyme123/thrift-ls",
+    "licenses": [
+      "Apache-2.0"
+    ],
+    "languages": [
+      "Thrift"
+    ],
+    "categories": [
+      "LSP"
+    ],
+    "source": {
+      "id": "pkg:github/joyme123/thrift-ls@v0.0.8",
+      "asset": [
+        {
+          "target": "darwin_x64",
+          "file": "thriftls-darwin-amd64"
+        },
+        {
+          "target": "darwin_arm64",
+          "file": "thriftls-darwin-arm64"
+        },
+        {
+          "target": "win_x64",
+          "file": "thriftls-windows-amd64.exe"
+        },
+        {
+          "target": "win_x86",
+          "file": "thriftls-windows-386.exe"
+        },
+        {
+          "target": "linux_x86",
+          "file": "thriftls-linux-386"
+        },
+        {
+          "target": "linux_x64",
+          "file": "thriftls-linux-amd64"
+        },
+        {
+          "target": "linux_arm64",
+          "file": "thriftls-linux-arm64"
+        }
+      ]
+    },
+    "bin": {
+      "thriftls": "{{source.asset.file}}"
+    }
+  },
+  {
     "name": "tree-sitter-cli",
     "description": "The Tree-sitter CLI allows you to develop, test, and use Tree-sitter grammars from the command line. It works on\nMacOS, Linux, and Windows.\n",
     "homepage": "https://github.com/tree-sitter/tree-sitter/blob/master/cli/README.md",
@@ -9080,7 +9384,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/nvarner/typst-lsp@v0.9.0",
+      "id": "pkg:github/nvarner/typst-lsp@v0.9.4",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -9202,7 +9506,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:github/daveshanley/vacuum@v0.3.3",
+      "id": "pkg:github/daveshanley/vacuum@v0.3.6",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -9347,7 +9651,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:github/errata-ai/vale@v2.28.1",
+      "id": "pkg:github/errata-ai/vale@v2.28.2",
       "asset": [
         {
           "target": "darwin_x64",
@@ -9594,7 +9898,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/forcedotcom/salesforcedx-vscode@v58.9.1",
+      "id": "pkg:github/forcedotcom/salesforcedx-vscode@v58.11.0",
       "asset": {
         "file": "salesforcedx-vscode-visualforce-{{ version | strip_prefix \"v\" }}.vsix"
       }
@@ -9727,7 +10031,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:pypi/vulture@2.8"
+      "id": "pkg:pypi/vulture@2.9.1"
     },
     "bin": {
       "vulture": "pypi:vulture"
@@ -9833,7 +10137,7 @@
       "message": "xo should now be installed locally in the project where it's used."
     },
     "source": {
-      "id": "pkg:npm/xo@0.55.1"
+      "id": "pkg:npm/xo@0.56.0"
     },
     "bin": {
       "xo": "npm:xo"
@@ -10125,53 +10429,50 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/zigtools/zls@0.10.0",
+      "id": "pkg:github/zigtools/zls@0.11.0",
       "asset": [
         {
           "target": "darwin_arm64",
-          "file": "aarch64-macos.tar.zst",
+          "file": "zls-aarch64-macos.tar.gz",
           "bin": "bin/zls"
         },
         {
           "target": "darwin_x64",
-          "file": "x86_64-macos.tar.zst",
+          "file": "zls-x86_64-macos.tar.gz",
+          "bin": "bin/zls"
+        },
+        {
+          "target": "linux_arm64",
+          "file": "zls-aarch64-linux.tar.gz",
           "bin": "bin/zls"
         },
         {
           "target": "linux_x64",
-          "file": "x86_64-linux.tar.zst",
+          "file": "zls-x86_64-linux.tar.gz",
           "bin": "bin/zls"
         },
         {
           "target": "linux_x86",
-          "file": "i386-linux.tar.zst",
+          "file": "zls-x86-linux.tar.gz",
           "bin": "bin/zls"
         },
         {
           "target": "win_x86",
-          "file": "i386-windows.tar.zst",
+          "file": "zls-x86-windows.zip",
           "bin": "bin/zls.exe"
         },
         {
           "target": "win_x64",
-          "file": "x86_64-windows.tar.zst",
+          "file": "zls-x86_64-windows.zip",
           "bin": "bin/zls.exe"
         }
       ]
     },
     "schemas": {
-      "lsp": "vscode:https://raw.githubusercontent.com/zigtools/zls-vscode/master/package.json"
+      "lsp": "vscode:https://raw.githubusercontent.com/ziglang/vscode-zig/master/package.json"
     },
     "bin": {
       "zls": "{{source.asset.bin}}"
-    },
-    "ci_skip": [
-      "darwin_x64",
-      "darwin_arm64",
-      "win_arm",
-      "win_arm64",
-      "win_x64",
-      "win_x86"
-    ]
+    }
   }
 ]

@@ -435,3 +435,80 @@
 [START][2023-08-11 13:06:00] LSP logging initiated
 [WARN][2023-08-11 13:06:00] ...lsp/handlers.lua:137	"The language server emmet_ls triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
 [WARN][2023-08-11 13:06:00] ...lsp/handlers.lua:137	"The language server emmet_ls triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[START][2023-08-14 13:19:06] LSP logging initiated
+[WARN][2023-08-14 13:19:06] ...lsp/handlers.lua:137	"The language server emmet_ls triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[WARN][2023-08-14 13:19:06] ...lsp/handlers.lua:137	"The language server emmet_ls triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[START][2023-08-14 14:58:39] LSP logging initiated
+[WARN][2023-08-14 14:58:39] ...lsp/handlers.lua:137	"The language server emmet_ls triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[WARN][2023-08-14 14:58:39] ...lsp/handlers.lua:137	"The language server emmet_ls triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[START][2023-08-14 15:27:04] LSP logging initiated
+[WARN][2023-08-14 15:27:04] ...lsp/handlers.lua:137	"The language server emmet_ls triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[WARN][2023-08-14 15:27:04] ...lsp/handlers.lua:137	"The language server emmet_ls triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[START][2023-08-14 17:12:20] LSP logging initiated
+[WARN][2023-08-14 17:12:20] ...lsp/handlers.lua:137	"The language server emmet_ls triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[WARN][2023-08-14 17:12:20] ...lsp/handlers.lua:137	"The language server emmet_ls triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[START][2023-08-15 08:14:18] LSP logging initiated
+[WARN][2023-08-15 08:14:18] ...lsp/handlers.lua:137	"The language server emmet_ls triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[WARN][2023-08-15 08:14:18] ...lsp/handlers.lua:137	"The language server emmet_ls triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[START][2023-08-16 10:39:30] LSP logging initiated
+[WARN][2023-08-16 10:39:30] ...lsp/handlers.lua:137	"The language server emmet_ls triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[WARN][2023-08-16 10:39:30] ...lsp/handlers.lua:137	"The language server emmet_ls triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[START][2023-08-16 11:00:12] LSP logging initiated
+[WARN][2023-08-16 11:00:12] ...lsp/handlers.lua:137	"The language server emmet_ls triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[WARN][2023-08-16 11:00:12] ...lsp/handlers.lua:137	"The language server emmet_ls triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[WARN][2023-08-16 11:00:15] ...lsp/handlers.lua:137	"The language server tailwindcss triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[START][2023-08-16 11:23:18] LSP logging initiated
+[WARN][2023-08-16 11:23:18] ...lsp/handlers.lua:137	"The language server emmet_ls triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[WARN][2023-08-16 11:23:18] ...lsp/handlers.lua:137	"The language server emmet_ls triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[WARN][2023-08-16 11:23:21] ...lsp/handlers.lua:137	"The language server tailwindcss triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[WARN][2023-08-16 11:29:26] ...lsp/handlers.lua:137	"The language server tailwindcss triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[ERROR][2023-08-16 11:30:06] ...lsp/handlers.lua:535	"Unhandled exception: ENOENT: no such file or directory, open 'c:\\Users\\estagio.startup06\\repos\\diagnostico-da-industria\\.next\\static\\css\\app\\layout.css'\nError: ENOENT: no such file or directory, open 'c:\\Users\\estagio.startup06\\repos\\diagnostico-da-industria\\.next\\static\\css\\app\\layout.css'"
+[START][2023-08-16 13:10:50] LSP logging initiated
+[WARN][2023-08-16 13:10:50] ...lsp/handlers.lua:137	"The language server emmet_ls triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[WARN][2023-08-16 13:10:50] ...lsp/handlers.lua:137	"The language server emmet_ls triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[ERROR][2023-08-16 14:15:00] ...lsp/handlers.lua:535	"Unhandled exception: ENOENT: no such file or directory, open 'c:\\Users\\estagio.startup06\\repos\\diagnostico-da-industria\\.next\\static\\css\\app\\layout.css'\nError: ENOENT: no such file or directory, open 'c:\\Users\\estagio.startup06\\repos\\diagnostico-da-industria\\.next\\static\\css\\app\\layout.css'"
+[START][2023-08-16 14:31:10] LSP logging initiated
+[WARN][2023-08-16 14:31:10] ...lsp/handlers.lua:137	"The language server emmet_ls triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[WARN][2023-08-16 14:31:10] ...lsp/handlers.lua:137	"The language server emmet_ls triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[WARN][2023-08-16 14:31:12] ...lsp/handlers.lua:137	"The language server tailwindcss triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[ERROR][2023-08-16 14:33:22] ...lsp/handlers.lua:535	"Unhandled exception: ENOENT: no such file or directory, open 'c:\\Users\\estagio.startup06\\repos\\diagnostico-da-industria\\.next\\static\\css\\app\\layout.css'\nError: ENOENT: no such file or directory, open 'c:\\Users\\estagio.startup06\\repos\\diagnostico-da-industria\\.next\\static\\css\\app\\layout.css'"
+[ERROR][2023-08-17 08:07:23] ...lsp/handlers.lua:535	"Unhandled exception: ENOENT: no such file or directory, open 'c:\\Users\\estagio.startup06\\repos\\diagnostico-da-industria\\.next\\static\\css\\app\\layout.css'\nError: ENOENT: no such file or directory, open 'c:\\Users\\estagio.startup06\\repos\\diagnostico-da-industria\\.next\\static\\css\\app\\layout.css'"
+[WARN][2023-08-17 09:01:36] ...lsp/handlers.lua:137	"The language server tailwindcss triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[START][2023-08-21 13:44:01] LSP logging initiated
+[WARN][2023-08-21 13:44:01] ...lsp/handlers.lua:137	"The language server emmet_ls triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[WARN][2023-08-21 13:44:01] ...lsp/handlers.lua:137	"The language server emmet_ls triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[WARN][2023-08-21 13:44:06] ...lsp/handlers.lua:137	"The language server tailwindcss triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[ERROR][2023-08-21 14:03:11] ...lsp/handlers.lua:535	"Unhandled exception: ENOENT: no such file or directory, open 'c:\\Users\\estagio.startup06\\repos\\diagnostico-da-industria\\.next\\static\\css\\app\\layout.css'\nError: ENOENT: no such file or directory, open 'c:\\Users\\estagio.startup06\\repos\\diagnostico-da-industria\\.next\\static\\css\\app\\layout.css'"
+[START][2023-08-21 16:40:51] LSP logging initiated
+[WARN][2023-08-21 16:40:51] ...lsp/handlers.lua:137	"The language server emmet_ls triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[WARN][2023-08-21 16:40:51] ...lsp/handlers.lua:137	"The language server emmet_ls triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[ERROR][2023-08-21 17:47:22] ...lsp/handlers.lua:535	"Unhandled exception: ENOENT: no such file or directory, open 'c:\\Users\\estagio.startup06\\repos\\diagnostico-da-industria\\.next\\static\\css\\app\\layout.css'\nError: ENOENT: no such file or directory, open 'c:\\Users\\estagio.startup06\\repos\\diagnostico-da-industria\\.next\\static\\css\\app\\layout.css'"
+[START][2023-08-22 11:30:02] LSP logging initiated
+[WARN][2023-08-22 11:30:02] ...lsp/handlers.lua:137	"The language server emmet_ls triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[WARN][2023-08-22 11:30:02] ...lsp/handlers.lua:137	"The language server emmet_ls triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[WARN][2023-08-22 11:30:06] ...lsp/handlers.lua:137	"The language server tailwindcss triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[START][2023-08-23 10:17:10] LSP logging initiated
+[WARN][2023-08-23 10:17:10] ...lsp/handlers.lua:137	"The language server emmet_ls triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[WARN][2023-08-23 10:17:10] ...lsp/handlers.lua:137	"The language server emmet_ls triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[WARN][2023-08-23 10:17:12] ...lsp/handlers.lua:137	"The language server tailwindcss triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[START][2023-08-23 10:28:24] LSP logging initiated
+[WARN][2023-08-23 10:28:24] ...lsp/handlers.lua:137	"The language server emmet_ls triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[WARN][2023-08-23 10:28:24] ...lsp/handlers.lua:137	"The language server emmet_ls triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[WARN][2023-08-23 10:28:26] ...lsp/handlers.lua:137	"The language server tailwindcss triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[ERROR][2023-08-23 10:41:15] ...lsp/handlers.lua:535	"Unhandled exception: ENOENT: no such file or directory, open 'c:\\Users\\estagio.startup06\\repos\\diagnostico-da-industria\\.next\\static\\css\\app\\layout.css'\nError: ENOENT: no such file or directory, open 'c:\\Users\\estagio.startup06\\repos\\diagnostico-da-industria\\.next\\static\\css\\app\\layout.css'"
+[WARN][2023-08-23 11:09:53] ...lsp/handlers.lua:137	"The language server tailwindcss triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[START][2023-08-23 14:45:43] LSP logging initiated
+[WARN][2023-08-23 14:45:43] ...lsp/handlers.lua:137	"The language server emmet_ls triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[WARN][2023-08-23 14:45:43] ...lsp/handlers.lua:137	"The language server emmet_ls triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[WARN][2023-08-23 14:45:47] ...lsp/handlers.lua:137	"The language server tailwindcss triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[START][2023-08-23 15:04:13] LSP logging initiated
+[WARN][2023-08-23 15:04:13] ...lsp/handlers.lua:137	"The language server emmet_ls triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[WARN][2023-08-23 15:04:13] ...lsp/handlers.lua:137	"The language server emmet_ls triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[WARN][2023-08-23 15:04:16] ...lsp/handlers.lua:137	"The language server tailwindcss triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[START][2023-08-23 15:05:27] LSP logging initiated
+[WARN][2023-08-23 15:05:27] ...lsp/handlers.lua:137	"The language server emmet_ls triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[WARN][2023-08-23 15:05:27] ...lsp/handlers.lua:137	"The language server emmet_ls triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[WARN][2023-08-23 15:05:30] ...lsp/handlers.lua:137	"The language server tailwindcss triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[START][2023-08-23 15:08:07] LSP logging initiated
+[WARN][2023-08-23 15:08:07] ...lsp/handlers.lua:137	"The language server emmet_ls triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"
+[WARN][2023-08-23 15:08:07] ...lsp/handlers.lua:137	"The language server emmet_ls triggers a registerCapability handler despite dynamicRegistration set to false. Report upstream, this warning is harmless"

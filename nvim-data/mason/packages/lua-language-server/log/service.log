@@ -1,9 +1,9 @@
-[12:56:26.850][info] [#0:C:/Users/estagio.startup06/AppData/Local/nvim-data/mason/packages/lua-language-server\main.lua:66]: Lua Lsp startup, root: 	C:/Users/estagio.startup06/AppData/Local/nvim-data/mason/packages/lua-language-server
-[12:56:26.850][info] [#0:C:/Users/estagio.startup06/AppData/Local/nvim-data/mason/packages/lua-language-server\main.lua:67]: ROOT:	C:/Users/estagio.startup06/AppData/Local/nvim-data/mason/packages/lua-language-server
-[12:56:26.850][info] [#0:C:/Users/estagio.startup06/AppData/Local/nvim-data/mason/packages/lua-language-server\main.lua:68]: LOGPATH:	C:/Users/estagio.startup06/AppData/Local/nvim-data/mason/packages/lua-language-server/log
-[12:56:26.850][info] [#0:C:/Users/estagio.startup06/AppData/Local/nvim-data/mason/packages/lua-language-server\main.lua:69]: METAPATH:	C:/Users/estagio.startup06/AppData/Local/nvim-data/mason/packages/lua-language-server/meta
-[12:56:26.850][info] [#0:C:/Users/estagio.startup06/AppData/Local/nvim-data/mason/packages/lua-language-server\main.lua:70]: VERSION:	3.6.23
-[12:56:26.881][info] [#0:script\service\service.lua:144]: 
+[14:46:30.539][info] [#0:C:/Users/estagio.startup06/AppData/Local/nvim-data/mason/packages/lua-language-server\main.lua:66]: Lua Lsp startup, root: 	C:/Users/estagio.startup06/AppData/Local/nvim-data/mason/packages/lua-language-server
+[14:46:30.539][info] [#0:C:/Users/estagio.startup06/AppData/Local/nvim-data/mason/packages/lua-language-server\main.lua:67]: ROOT:	C:/Users/estagio.startup06/AppData/Local/nvim-data/mason/packages/lua-language-server
+[14:46:30.539][info] [#0:C:/Users/estagio.startup06/AppData/Local/nvim-data/mason/packages/lua-language-server\main.lua:68]: LOGPATH:	C:/Users/estagio.startup06/AppData/Local/nvim-data/mason/packages/lua-language-server/log
+[14:46:30.539][info] [#0:C:/Users/estagio.startup06/AppData/Local/nvim-data/mason/packages/lua-language-server\main.lua:69]: METAPATH:	C:/Users/estagio.startup06/AppData/Local/nvim-data/mason/packages/lua-language-server/meta
+[14:46:30.539][info] [#0:C:/Users/estagio.startup06/AppData/Local/nvim-data/mason/packages/lua-language-server\main.lua:70]: VERSION:	3.6.23
+[14:46:30.554][info] [#0:script\service\service.lua:144]: 
 ========= Medical Examination Report =========
     --------------- Memory ---------------
         Total: 2.129 MB
@@ -25,7 +25,7 @@
         Holdon:   0
         Waiting:  0
 ==============================================
-[12:56:26.881][info] [#0:script\client.lua:657]: Client init	{
+[14:46:30.570][info] [#0:script\client.lua:657]: Client init	{
   capabilities = {
     textDocument = {
       callHierarchy = {
@@ -184,7 +184,7 @@
     version = "0.9.1"
   },
   initializationOptions = {},
-  processId = 26124,
+  processId = 24916,
   rootPath = "C:\\Users\\estagio.startup06\\AppData\\Local\\nvim\\lua\\",
   rootUri = "file:///C:/Users/estagio.startup06/AppData/Local/nvim/lua/",
   trace = "off",
@@ -193,7 +193,7 @@
       uri = "file:///C:/Users/estagio.startup06/AppData/Local/nvim/lua/"
     } }
 }
-[12:56:26.881][info] [#0:script\language.lua:137]: VSC language: nil
-[12:56:26.881][info] [#0:script\language.lua:138]: LS  language: en-us
-[12:56:26.881][info] [#0:script\workspace\workspace.lua:38]: Workspace init root: 	file:///C:/Users/estagio.startup06/AppData/Local/nvim/lua/
-[12:56:26.881][info] [#0:script\workspace\workspace.lua:42]: Log path: 	C:/Users/estagio.startup06/AppData/Local/nvim-data/mason/packages/lua-language-server/log/file_C_Users_estagio.startup06_AppData_Local_nvim_lua_.log
+[14:46:30.570][info] [#0:script\language.lua:137]: VSC language: nil
+[14:46:30.570][info] [#0:script\language.lua:138]: LS  language: en-us
+[14:46:30.570][info] [#0:script\workspace\workspace.lua:38]: Workspace init root: 	file:///C:/Users/estagio.startup06/AppData/Local/nvim/lua/
+[14:46:30.570][info] [#0:script\workspace\workspace.lua:42]: Log path: 	C:/Users/estagio.startup06/AppData/Local/nvim-data/mason/packages/lua-language-server/log/file_C_Users_estagio.startup06_AppData_Local_nvim_lua_.log
