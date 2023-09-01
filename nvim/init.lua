@@ -26,6 +26,7 @@ require('packer').startup(function(use)
     }
   }                                                                        --Navegação entre blocos
   use 'windwp/nvim-ts-autotag'
+  use 'mg979/vim-visual-multi'                                             --multi cursor
   use { 'romgrk/barbar.nvim' }                                             --barra superior
   use 'Bekaboo/deadcolumn.nvim'                                            --coluna
   use 'f-person/git-blame.nvim'                                            --Git Blammer
@@ -95,7 +96,7 @@ require('packer').startup(function(use)
   use { 'nvim-telescope/telescope.nvim', branch = '0.1.x', requires = { 'nvim-lua/plenary.nvim' } }
 
   -- Fuzzy Finder Algorithm which requires local dependencies to be built. Only load if `make` is available
-  use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+  --use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
   use 'lambdalisue/nerdfont.vim'
 
@@ -471,18 +472,10 @@ require('telescope').setup {
     },
   },
   extensions = {
-    fzf = {
-      fuzzy = true,                   -- false will only do exact matching
-      override_generic_sorter = true, -- override the generic sorter
-      override_file_sorter = true,    -- override the file sorter
-      case_mode = "smart_case",       -- or "ignore_case" or "respect_case"
-      -- the default case_mode is "smart_case"
-    }
   }
 }
 
 -- Enable telescope fzf native, if installed
-require('telescope').load_extension('fzf')
 
 -- See `:help telescope.builtin`
 vim.keymap.set('n', '<leader>?', require('telescope.builtin').oldfiles, { desc = '[?] Find recently opened files' })
