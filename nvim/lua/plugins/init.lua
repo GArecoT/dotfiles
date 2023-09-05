@@ -3,10 +3,22 @@
 local default_plugins = {
 
   "nvim-lua/plenary.nvim",
-  "windwp/nvim-ts-autotag",
+  {
+    "windwp/nvim-ts-autotag",
+    ft = { "javascript", "html", "typescript" },
+  },
   {
     "f-person/git-blame.nvim",
     enabled = true,
+    lazy = false,
+  },
+
+  {
+    "goolord/alpha-nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    config = function()
+      require("alpha").setup(require("alpha.themes.startify").config)
+    end,
     lazy = false,
   },
 
