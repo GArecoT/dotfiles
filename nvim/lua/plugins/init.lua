@@ -14,15 +14,6 @@ local default_plugins = {
   },
 
   {
-    "goolord/alpha-nvim",
-    dependencies = { "nvim-tree/nvim-web-devicons" },
-    config = function()
-      require("alpha").setup(require("alpha.themes.startify").config)
-    end,
-    lazy = false,
-  },
-
-  {
     "ErichDonGubler/lsp_lines.nvim", --lnhas bonitinhas pra LSP
     config = function()
       require("lsp_lines").setup()
