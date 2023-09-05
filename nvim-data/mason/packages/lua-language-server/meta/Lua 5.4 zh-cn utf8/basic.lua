@@ -16,6 +16,7 @@ arg = {}
 ---@generic T
 ---@param v? T
 ---@param message? any
+---@param ... any
 ---@return T
 ---@return any ...
 function assert(v, message, ...) end
@@ -36,6 +37,7 @@ function assert(v, message, ...) end
 ---[查看文档](command:extension.lua.doc?["en-us/54/manual.html/pdf-collectgarbage"])
 ---
 ---@param opt? gcoptions
+---@param ... any
 ---@return any
 function collectgarbage(opt, ...) end
 
@@ -167,6 +169,7 @@ function newproxy(proxy) end
 ---[查看文档](command:extension.lua.doc?["en-us/54/manual.html/pdf-module"])
 ---
 ---@param name string
+---@param ...  any
 function module(name, ...) end
 
 ---
@@ -214,6 +217,7 @@ function pairs(t) end
 ---
 ---@param f     async fun(...):...
 ---@param arg1? any
+---@param ...   any
 ---@return boolean success
 ---@return any result
 ---@return any ...
@@ -224,6 +228,7 @@ function pcall(f, arg1, ...) end
 ---
 ---[查看文档](command:extension.lua.doc?["en-us/54/manual.html/pdf-print"])
 ---
+---@param ... any
 function print(...) end
 
 ---
@@ -277,6 +282,7 @@ function rawset(table, index, value) end
 ---[查看文档](command:extension.lua.doc?["en-us/54/manual.html/pdf-select"])
 ---
 ---@param index integer|"#"
+---@param ...   any
 ---@return any
 ---@nodiscard
 function select(index, ...) end
@@ -394,6 +400,7 @@ _VERSION = "Lua 5.4"
 ---[查看文档](command:extension.lua.doc?["en-us/54/manual.html/pdf-warn"])
 ---
 ---@param message string
+---@param ...     any
 function warn(message, ...) end
 
 ---
@@ -404,6 +411,7 @@ function warn(message, ...) end
 ---@param f     async fun(...):...
 ---@param msgh  function
 ---@param arg1? any
+---@param ...   any
 ---@return boolean success
 ---@return any result
 ---@return any ...
