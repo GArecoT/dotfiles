@@ -5,7 +5,7 @@ local default_plugins = {
   "nvim-lua/plenary.nvim",
   {
     "windwp/nvim-ts-autotag",
-    ft = { "javascript", "html", "typescript" },
+    ft = { "javascript", "html", "typescript", "typescriptreact" },
   },
   {
     "f-person/git-blame.nvim",

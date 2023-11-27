@@ -48,6 +48,7 @@ M.general = {
     },
     ["<C-s>"] = { "<Cmd>vsplit<Cr>" },
     ["<C-x>"] = { "<Cmd>split<Cr>" },
+    ["<A-q>"] = { "<Cmd>bdelete<Cr>" },
   },
 
   t = {
@@ -85,14 +86,6 @@ M.tabufline = {
         require("nvchad.tabufline").tabuflinePrev()
       end,
       "Goto prev buffer",
-    },
-
-    -- close buffer + hide terminal buffer
-    ["A-q"] = {
-      function()
-        require("nvchad.tabufline").close_buffer()
-      end,
-      "Close buffer",
     },
   },
 }
