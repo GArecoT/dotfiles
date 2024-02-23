@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 pkg_updates() {
   updates=$(pacman -Qu | wc -l)
-  aurupdates=$(paru -Qua | wc -l)
+  aurupdates=$(yay -Qua | wc -l)
   updates=$((updates + aurupdates))
   if [ $updates == 1 ]; then
     echo -n " 1 Update "
