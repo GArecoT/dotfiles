@@ -134,6 +134,7 @@ vim.cmd [[autocmd BufWritePre *tsx lua vim.lsp.buf.format()]]
 
 -- Use fish as terminal, uncomment on linux
 vim.o.shell = "fish"
+vim.opt.clipboard="unnamedplus"
 
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`

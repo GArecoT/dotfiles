@@ -16,6 +16,12 @@ lspconfig.rust_analyzer.setup {
     },
   },
 }
+lspconfig.volar.setup{
+  filetypes = {'vue', 'json'}
+}
+lspconfig.vuels.setup{
+  filetypes = {}
+}
 -- if you just want default config for the servers then put them in a table
 local servers = {
   "html",
@@ -26,9 +32,10 @@ local servers = {
   "pyright",
   "rust_analyzer",
   "jsonls",
-  "vuels",
+  "volar",
   "eslint",
   "astro",
+  "deno",
 }
 
 for _, lsp in ipairs(servers) do
