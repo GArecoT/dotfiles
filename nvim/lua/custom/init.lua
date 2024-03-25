@@ -5,3 +5,6 @@
 --   pattern = "*",
 --   command = "tabdo wincmd =",
 -- })
+if vim.g.neovide then
+  vim.o.guifont = "InconsolataGo Nerd Font Propo:h14"
+end

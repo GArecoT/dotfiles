@@ -35,7 +35,7 @@ local servers = {
   "volar",
   "eslint",
   "astro",
-  "deno",
+  "denols",
 }
 
 for _, lsp in ipairs(servers) do
