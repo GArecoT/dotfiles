@@ -9,6 +9,7 @@ M.override = {
   Comment = {
     italic = true,
   },
+  Search = {bg = "purple", fg = "black2"},
 }
 
 ---@type HLTable
