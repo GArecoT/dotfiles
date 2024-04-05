@@ -11,7 +11,7 @@ local themes_path = "/home/gabriel/.config/awesome/themes/catppuccin"
 
 local theme = {}
 
-theme.font          = "Inconsolata 9"
+theme.font          = "Noto Sans 10"
 theme.wallpaper = "/home/gabriel/Imagens/10-12.jpg"
 theme.fg_normal                                 = "#cdd6f4"
 theme.fg_focus                                  = "#cba6f7"
@@ -29,6 +29,7 @@ theme.titlebar_bg_normal                        = theme.bg_normal
 theme.titlebar_fg_focus                         = theme.fg_focus
 theme.menu_height                               = dpi(16)
 theme.menu_width                                = dpi(140)
+theme.systray_icon_spacing                      = 10
 
 local taglist_square_size = dpi(4)
 theme.taglist_squares_sel = theme_assets.taglist_squares_sel(
@@ -55,7 +56,7 @@ theme.layout_magnifier                          = themes_path .. "/icons/magnifi
 theme.layout_floating                           = themes_path .. "/icons/floating.png"
 theme.tasklist_plain_task_name                  = true
 theme.tasklist_disable_icon                     = true
-theme.useless_gap                               = dpi(0)
+theme.useless_gap                               = dpi(3)
 theme.titlebar_close_button_focus               = themes_path .. "/icons/titlebar/close_focus.png"
 theme.titlebar_close_button_normal              = themes_path .. "/icons/titlebar/close_normal.png"
 theme.titlebar_ontop_button_focus_active        = themes_path .. "/icons/titlebar/ontop_focus_active.png"

@@ -1,3 +1,4 @@
+os.setlocale(os.getenv("LANG")) 
 -- If LuaRocks is installed, make sure that packages installed through it are
 -- found (e.g. lgi). If LuaRocks is not installed, do nothing.
 pcall(require, "luarocks.loader")
@@ -69,18 +70,17 @@ modkey = "Mod4"
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
     awful.layout.suit.tile,
-    awful.layout.suit.floating,
     awful.layout.suit.tile.left,
-    awful.layout.suit.tile.bottom,
-    awful.layout.suit.tile.top,
-    awful.layout.suit.fair,
-    awful.layout.suit.fair.horizontal,
-    awful.layout.suit.spiral,
-    awful.layout.suit.spiral.dwindle,
-    awful.layout.suit.max,
-    awful.layout.suit.max.fullscreen,
-    awful.layout.suit.magnifier,
-    awful.layout.suit.corner.nw,
+    -- awful.layout.suit.tile.bottom,
+    -- awful.layout.suit.tile.top,
+    -- awful.layout.suit.fair,
+    -- awful.layout.suit.fair.horizontal,
+    -- awful.layout.suit.spiral,
+    -- awful.layout.suit.spiral.dwindle,
+    -- awful.layout.suit.max,
+    -- awful.layout.suit.max.fullscreen,
+    -- awful.layout.suit.magnifier,
+    -- awful.layout.suit.corner.nw,
     -- awful.layout.suit.corner.ne,
     -- awful.layout.suit.corner.sw,
     -- awful.layout.suit.corner.se,
@@ -109,12 +109,9 @@ mylauncher = awful.widget.launcher({ image = beautiful.awesome_icon,
 menubar.utils.terminal = terminal -- Set the terminal for applications that require it
 -- }}}
 
--- Keyboard map indicator and switcher
-mykeyboardlayout = awful.widget.keyboardlayout()
-
 -- {{{ Wibar
 -- Create a textclock widget
-mytextclock = wibox.widget.textclock()
+mytextclock = wibox.widget.textclock('<span color="#f5c2e7" font="Noto Sans"> %a %d de %B - %H:%M </span>', 5)
 local volume_widget = require('awesome-wm-widgets.volume-widget.volume')
 local net_wireless = net_widgets.indicator({interfaces={"wlan0", "lo", "enp7s0"}, timeout=5, font= sans})
 
@@ -205,23 +202,34 @@ awful.screen.connect_for_each_screen(function(s)
     }
 
     -- Create the wibox
-    s.mywibox = awful.wibar({ position = "top", screen = s })
+    s.mywibox = awful.wibar{ position = "top", screen = s}
 
     -- Add widgets to the wibox
     s.mywibox:setup {
         layout = wibox.layout.align.horizontal,
+        expand= 'none',
         { -- Left widgets
             layout = wibox.layout.fixed.horizontal,
-            mylauncher,
-            s.mytaglist,
-            s.mypromptbox,
+            {
+             widget = wibox.container.margin,
+             left = 10,
+             right = 10,
+             s.mytaglist,
+             s.mypromptbox,
+            }
         },
         s.mytasklist, -- Middle widget
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
-            mykeyboardlayout,
-            wibox.widget.systray(),
-            volume_widget{widget_type = 'horizontal_bar', icon_dir="/home/gabriel/.config/awesome/awesome-wm-widgets/volume-widget/icons/", with_icon=true},
+
+             wibox.layout.margin(wibox.widget.systray(), 5, 5, 5, 5),
+            {
+             widget = wibox.container.margin,
+             left = 5,
+             right = 3,
+            volume_widget{widget_type = 'horizontal_bar',main_color="#C1E1C1", mute_color=beautiful.bg_urgent},
+
+            },
             net_wireless,
             mytextclock,
             s.mylayoutbox,
@@ -610,4 +618,12 @@ end)
 client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
-awful.spawn.with_shell("~/.config/awesome/autorun.sh")
+--Startup scripts
+--Set second monitor
+awful.spawn.with_shell("xrandr --output HDMI-1 --primary --right-of eDP-1")
+awful.spawn.with_shell("xrandr --output HDMI-1-1 --primary --right-of eDP-1-1")
+--Start clipboard
+awful.spawn.with_shell("greenclip daemon")
+--Set keyboard layout
+awful.spawn.with_shell("setxkbmap -layout us -variant intl")
+
