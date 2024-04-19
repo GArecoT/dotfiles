@@ -87,6 +87,19 @@ M.tabufline = {
       end,
       "Goto prev buffer",
     },
+    ["<A-l>"] = {
+      function()
+        require("nvchad.tabufline").tabuflineNext()
+      end,
+      "Goto next buffer",
+    },
+
+    ["<A-h>"] = {
+      function()
+        require("nvchad.tabufline").tabuflinePrev()
+      end,
+      "Goto prev buffer",
+    },
   },
 }
 

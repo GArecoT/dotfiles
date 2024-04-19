@@ -82,5 +82,10 @@ local plugins = {
       vim.api.nvim_create_user_command("PeekClose", require("peek").close, {})
     end,
   },
+  {
+    'andymass/vim-matchup',
+    lazy = false,
+  },
 }
+
 return plugins
