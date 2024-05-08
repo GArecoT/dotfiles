@@ -86,6 +86,10 @@ local plugins = {
     'andymass/vim-matchup',
     lazy = false,
   },
+{
+    "VPavliashvili/json-nvim",
+    ft = "json", -- only load for json filetype
+}
 }
 
 return plugins

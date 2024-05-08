@@ -16,8 +16,35 @@ lspconfig.rust_analyzer.setup {
     },
   },
 }
+
+
 lspconfig.volar.setup{
-  filetypes = {'vue', 'json'}
+filetypes = { "vue", },
+    init_options = {
+      vue = {
+        hybridMode = false,
+      },
+    typescript = {
+      tsdk = '/usr/lib/node_modules/@vue/typescript-plugin'
+    },
+    },
+}
+
+lspconfig.tsserver.setup{
+  init_options = {
+    plugins = {
+      {
+        name = "@vue/typescript-plugin",
+        location = "/usr/lib/node_modules/@vue/typescript-plugin",
+        languages = {"javascript", "typescript", "vue"},
+      },
+    },
+  },
+  filetypes = {
+    "javascript",
+    "typescript",
+    "vue",
+  },
 }
 -- if you just want default config for the servers then put them in a table
 local servers = {
