@@ -52,24 +52,32 @@ lspconfig.volar.setup {
   capabilities = capabilities,
 }
 
-lspconfig.vtsls.setup {
+-- lspconfig.vtsls.setup {
+--   filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' },
+--   settings = {
+--     vtsls = {
+--       -- autoUseWorkspaceTsdk = true,
+--       tsserver = {
+--         globalPlugins = {
+--           {
+--             name = '@vue/typescript-plugin',
+--             location = vue_typescript_plugin,
+--             languages = { 'vue' },
+--             configNamespace = "typescript",
+--             enableForWorkspaceTypeScriptVersions = true,
+--           },
+--         },
+--       },
+--     },
+--   },
+--   on_attach = on_attach,
+--   capabilities = capabilities,
+-- }
+require("typescript-tools").setup {
   filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' },
   settings = {
-    vtsls = {
-      -- autoUseWorkspaceTsdk = true,
-      tsserver = {
-        globalPlugins = {
-          {
-            name = '@vue/typescript-plugin',
-            location = vue_typescript_plugin,
-            languages = { 'vue' },
-            configNamespace = "typescript",
-            enableForWorkspaceTypeScriptVersions = true,
-          },
-        },
-      },
-    },
-  },
-  on_attach = on_attach,
-  capabilities = capabilities,
+    tsserver_plugins = {
+      "@vue/typescript-plugin"
+    }
+  }
 }
