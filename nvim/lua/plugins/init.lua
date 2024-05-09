@@ -6,7 +6,6 @@ return {
       require "configs.conform"
     end,
   },
-
   -- These are some examples, uncomment them if you want to see them work!
   {
     "neovim/nvim-lspconfig",
@@ -36,7 +35,6 @@ return {
       },
     },
   },
-
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
@@ -55,10 +53,6 @@ return {
 
 
   --Custom
-  {
-    "mg979/vim-visual-multi",
-    lazy = false,
-  },
   {
     "akinsho/flutter-tools.nvim",
     ft = { "flutter", "dart" },
@@ -137,5 +131,15 @@ return {
         end,
       })
     end,
+  },
+  {
+    "folke/todo-comments.nvim",
+    lazy = false,
+    dependencies = { "nvim-lua/plenary.nvim" },
+    opts = {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    }
   }
 }

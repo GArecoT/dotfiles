@@ -8,9 +8,10 @@ map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
 
 --Custom
-map({ "n", "i", "v" }, "<C-s>", "<cmd> vsplit <cr>", { desc = "split vertical" })
-map({ "n", "i", "v" }, "<C-x>", "<cmd> split <cr>", { desc = "split horizontal" })
-map({ "n", "i", "v" }, "<C-a>", "<cmd> NvimTreeToggle<cr>", { desc = "toggle tree" })
+map({ "n" }, "<C-s>", "<cmd> vsplit <cr>", { desc = "split vertical" })
+map({ "n" }, "<C-x>", "<cmd> split <cr>", { desc = "split horizontal" })
+map({ "n" }, "<C-a>", "<cmd> NvimTreeToggle<cr>", { desc = "toggle tree" })
+map({ "n" }, "<C-q>", "<cmd> q<cr>", { desc = "quit" })
 
 -- Buffer Line
 map({ "n", "t" }, "<A-q>", function()

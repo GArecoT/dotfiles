@@ -48,31 +48,28 @@ local vue_typescript_plugin = require('mason-registry')
     .. '/node_modules/@vue/typescript-plugin'
 
 lspconfig.volar.setup {
-  filetypes = { "vue", },
-  init_options = {
-    vue = {
-      hybridMode = false,
-    },
-  },
+  on_attach = on_attach,
+  capabilities = capabilities,
 }
 
-lspconfig.tsserver.setup({
-  init_options = {
-    plugins = {
-      {
-        name = "@vue/typescript-plugin",
-        location = vue_typescript_plugin,
-        languages = { 'javascript', 'typescript', 'vue' }
+lspconfig.vtsls.setup {
+  filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' },
+  settings = {
+    vtsls = {
+      -- autoUseWorkspaceTsdk = true,
+      tsserver = {
+        globalPlugins = {
+          {
+            name = '@vue/typescript-plugin',
+            location = vue_typescript_plugin,
+            languages = { 'vue' },
+            configNamespace = "typescript",
+            enableForWorkspaceTypeScriptVersions = true,
+          },
+        },
       },
-    }
+    },
   },
-  filetypes = {
-    'javascript',
-    'javascriptreact',
-    'javascript.jsx',
-    'typescript',
-    'typescriptreact',
-    'typescript.tsx',
-    'vue',
-  },
-})
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
