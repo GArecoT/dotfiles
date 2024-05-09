@@ -52,32 +52,36 @@ lspconfig.volar.setup {
   capabilities = capabilities,
 }
 
--- lspconfig.vtsls.setup {
---   filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' },
---   settings = {
---     vtsls = {
---       -- autoUseWorkspaceTsdk = true,
---       tsserver = {
---         globalPlugins = {
---           {
---             name = '@vue/typescript-plugin',
---             location = vue_typescript_plugin,
---             languages = { 'vue' },
---             configNamespace = "typescript",
---             enableForWorkspaceTypeScriptVersions = true,
---           },
---         },
---       },
---     },
---   },
---   on_attach = on_attach,
---   capabilities = capabilities,
--- }
-require("typescript-tools").setup {
+lspconfig.vtsls.setup {
   filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' },
   settings = {
-    tsserver_plugins = {
-      "@vue/typescript-plugin"
-    }
-  }
+    vtsls = {
+      -- autoUseWorkspaceTsdk = true,
+      tsserver = {
+        globalPlugins = {
+          {
+            name = '@vue/typescript-plugin',
+            location = vue_typescript_plugin,
+            languages = { 'vue' },
+            configNamespace = "typescript",
+            enableForWorkspaceTypeScriptVersions = true,
+          },
+        },
+      },
+    },
+  },
+  on_attach = on_attach,
+  capabilities = capabilities,
 }
+--Plugin legal mas quando tiver mais atualizado a gente ve isso aí
+-- require("typescript-tools").setup {
+--   on_attach = function(client)
+--     client.server_capabilities.semanticTokensProvider = false
+--   end,
+--   filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' },
+--   settings = {
+--     tsserver_plugins = {
+--       "@vue/typescript-plugin"
+--     }
+--   }
+-- }

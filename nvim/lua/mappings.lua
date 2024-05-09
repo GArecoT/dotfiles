@@ -12,6 +12,7 @@ map({ "n" }, "<C-s>", "<cmd> vsplit <cr>", { desc = "split vertical" })
 map({ "n" }, "<C-x>", "<cmd> split <cr>", { desc = "split horizontal" })
 map({ "n" }, "<C-a>", "<cmd> NvimTreeToggle<cr>", { desc = "toggle tree" })
 map({ "n" }, "<C-q>", "<cmd> q<cr>", { desc = "quit" })
+map({ "n" }, "<leader>t", "<cmd> TodoTelescope<cr>", { desc = "quit" })
 
 -- Buffer Line
 map({ "n", "t" }, "<A-q>", function()
