@@ -125,6 +125,7 @@ return {
           "notify",
           "toggleterm",
           "lazyterm",
+          "nvdash",
         },
         callback = function()
           vim.b.miniindentscope_disable = true
