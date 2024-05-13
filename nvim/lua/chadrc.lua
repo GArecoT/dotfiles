@@ -5,7 +5,7 @@
 local M = {}
 
 M.ui = {
-  theme = "catppuccin",
+  theme = "ayu_light",
   nvdash = {
     load_on_startup = true,
 
@@ -59,8 +59,8 @@ M.ui = {
     Search = { bg = "purple", fg = "black" },
   },
   hl_add = {
-    Clock_bg = { bg = "pink", fg = "black" },
-    Clock_txt = { bg = "black", fg = "pink" }
+    Clock_bg = { bg = "pink", fg = "statusline_bg" },
+    Clock_txt = { bg = "statusline_bg", fg = "pink" }
   }
 }
 
