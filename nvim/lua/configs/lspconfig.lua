@@ -41,28 +41,35 @@ lspconfig.rust_analyzer.setup {
     },
   },
 }
-local vue_typescript_plugin = require('mason-registry')
-    .get_package('vue-language-server')
-    :get_install_path()
-    .. '/node_modules/@vue/language-server'
-    .. '/node_modules/@vue/typescript-plugin'
+local vue_typescript_plugin = require("mason-registry").get_package("vue-language-server"):get_install_path()
+  .. "/node_modules/@vue/language-server"
+  .. "/node_modules/@vue/typescript-plugin"
 
-lspconfig.volar.setup {
+require("lspconfig").volar.setup {
+  filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
+  init_options = {
+    vue = {
+      hybridMode = false,
+    },
+    typescript = {
+      -- tsdk = "/usr/lib/node_modules/typescript/lib",
+    },
+  },
   on_attach = on_attach,
   capabilities = capabilities,
 }
 
 lspconfig.vtsls.setup {
-  filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' },
+  filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
   settings = {
     vtsls = {
       -- autoUseWorkspaceTsdk = true,
       tsserver = {
         globalPlugins = {
           {
-            name = '@vue/typescript-plugin',
-            location = vue_typescript_plugin,
-            languages = { 'vue' },
+            name = "@vue/typescript-plugin",
+            location = "/usr/lib/node_modules/@vue/typescript-plugin/lib/",
+            languages = { "vue" },
             configNamespace = "typescript",
             enableForWorkspaceTypeScriptVersions = true,
           },
@@ -73,7 +80,8 @@ lspconfig.vtsls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
 }
---Plugin legal mas quando tiver mais atualizado a gente ve isso aí
+--WARNING: Checar periódicamente esse plugin pq ele não é muito popular e pode quebrar
+--
 -- require("typescript-tools").setup {
 --   on_attach = function(client)
 --     client.server_capabilities.semanticTokensProvider = false

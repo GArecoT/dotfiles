@@ -19,8 +19,11 @@ return {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
-        "lua-language-server", "stylua",
-        "html-lsp", "css-lsp", "prettier",
+        "lua-language-server",
+        "stylua",
+        "html-lsp",
+        "css-lsp",
+        "prettier",
         "cssls",
         "tsserver",
         "clangd",
@@ -39,10 +42,12 @@ return {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
-        "vim", "lua", "vimdoc",
-        "html", "css"
+        "vim",
+        "lua",
+        "vimdoc",
+        "html",
+        "css",
       },
-      autotag = { enable = true },
       highlight = {
         enable = true,
         use_languagetree = true,
@@ -50,7 +55,6 @@ return {
       indent = { enable = true },
     },
   },
-
 
   --Custom
   {
@@ -76,7 +80,7 @@ return {
     end,
   },
   {
-    'andymass/vim-matchup',
+    "andymass/vim-matchup",
     lazy = false,
   },
   {
@@ -97,6 +101,16 @@ return {
   {
     "windwp/nvim-ts-autotag",
     ft = { "javascript", "html", "typescript", "typescriptreact", "vue", "astro" },
+    config = function()
+      require("nvim-ts-autotag").setup {
+        opts = {
+          -- Defaults
+          enable_close = true, -- Auto close tags
+          enable_rename = true, -- Auto rename pairs of tags
+          enable_close_on_slash = false, -- Auto close on trailing </
+        },
+      }
+    end,
   },
   {
     "f-person/git-blame.nvim",
@@ -141,11 +155,18 @@ return {
       -- your configuration comes here
       -- or leave it empty to use the default settings
       -- refer to the configuration section below
-    }
+    },
+  },
+  -- Add comments to vue files
+  {
+    "JoosepAlviste/nvim-ts-context-commentstring",
+    config = function()
+      require "configs.comments"
+    end,
   },
   {
     "pmizio/typescript-tools.nvim",
     dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
     opts = {},
-  }
+  },
 }

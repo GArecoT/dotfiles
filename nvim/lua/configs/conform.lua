@@ -3,7 +3,9 @@ local options = {
     lua = { "stylua" },
     css = { "prettier" },
     html = { "prettier" },
-    vue = { "prettier" }
+    vue = { "prettier" },
+    js = { "prettier" },
+    ts = { "prettier" },
   },
 
   async = true,
