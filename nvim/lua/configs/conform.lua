@@ -6,6 +6,7 @@ local options = {
     vue = { "prettier" },
     js = { "prettier" },
     ts = { "prettier" },
+    json = { "prettier" },
   },
 
   async = true,
