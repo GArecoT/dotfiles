@@ -38,7 +38,6 @@ vim.schedule(function()
   require "mappings"
 end)
 
-
 --Custom
 --Highlight yank
 local highlight_group = vim.api.nvim_create_augroup("YankHighlight", { clear = true })
@@ -50,10 +49,12 @@ vim.api.nvim_create_autocmd("TextYankPost", {
   pattern = "*",
 })
 
+vim.cmd [[autocmd! CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false, scope="cursor"})]]
+
 --format on save
 vim.api.nvim_create_autocmd("BufWritePre", {
   pattern = "*",
   callback = function(args)
-    require("conform").format({ bufnr = args.buf })
+    require("conform").format { bufnr = args.buf }
   end,
 })

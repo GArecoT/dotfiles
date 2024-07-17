@@ -14,6 +14,11 @@ return {
       require "configs.lspconfig"
     end,
   },
+  -- {
+  --   "hrsh7th/nvim-cmp",
+  --
+  --   enabled = false,
+  -- },
 
   {
     "williamboman/mason.nvim",
