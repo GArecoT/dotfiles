@@ -49,8 +49,6 @@ vim.api.nvim_create_autocmd("TextYankPost", {
   pattern = "*",
 })
 
-vim.cmd [[autocmd! CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false, scope="cursor"})]]
-
 --format on save
 vim.api.nvim_create_autocmd("BufWritePre", {
   pattern = "*",

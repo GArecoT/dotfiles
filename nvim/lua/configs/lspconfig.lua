@@ -80,6 +80,13 @@ lspconfig.vtsls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
 }
+
+-- Fix autofocus on signature
+vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, {
+  focusable = false,
+  relative = "cursor",
+  silent = true,
+})
 --WARNING: Checar periódicamente esse plugin pq ele não é muito popular e pode quebrar
 --
 -- require("typescript-tools").setup {
