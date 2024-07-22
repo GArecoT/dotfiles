@@ -12,9 +12,9 @@ map({ "n" }, "<C-s>", "<cmd> vsplit <cr>", { desc = "split vertical" })
 map({ "n" }, "<C-x>", "<cmd> split <cr>", { desc = "split horizontal" })
 map({ "n" }, "<C-a>", "<cmd> NvimTreeToggle<cr>", { desc = "toggle tree" })
 map({ "n" }, "<C-q>", "<cmd> q<cr>", { desc = "quit" })
-map({ "n" }, "<leader>t", "<cmd> TodoTelescope<cr>", { desc = "quit" })
+map({ "n" }, "<leader>td", "<cmd> TodoTelescope<cr>", { desc = "quit" })
 map({ "n" }, "<leader>fm", function()
-  require("conform").format({ async = "true" })
+  require("conform").format { async = "true" }
 end, { desc = "format file" })
 
 -- Buffer Line
