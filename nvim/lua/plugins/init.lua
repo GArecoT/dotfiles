@@ -58,6 +58,9 @@ return {
         use_languagetree = true,
       },
       indent = { enable = true },
+      matchup = {
+        enable = true,
+      },
     },
   },
 

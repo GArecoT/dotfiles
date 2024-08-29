@@ -5,7 +5,6 @@
 local M = {}
 
 M.ui = {
-  theme = "catppuccin",
   nvdash = {
     load_on_startup = true,
 
@@ -43,15 +42,19 @@ M.ui = {
     -- default/round/block/arrow separators work only for default statusline theme
     -- round and block will work for minimal theme only
     separator_style = "round",
-    order = { "mode", "file", "diagnostics", "git",
-      "%=", "lsp_msg", "%=", "lsp", "cursor", "cwd" },
+    order = { "mode", "file", "diagnostics", "git", "%=", "lsp_msg", "%=", "lsp", "cursor", "cwd" },
 
     modules = {
       cwd = function()
-        return "%#Clock_txt#" ..
-            '' .. "%#Clock_bg# " .. '%#Clock_txt# ' .. string.format(os.date('%R')) .. '%#St_sep_r#' .. ''
+        return "%#Clock_txt#"
+          .. ""
+          .. "%#Clock_bg# "
+          .. "%#Clock_txt# "
+          .. string.format(os.date "%R")
+          .. "%#St_sep_r#"
+          .. ""
       end,
-    }
+    },
   },
   hl_override = {
     -- Comment = { italic = true },
@@ -60,8 +63,12 @@ M.ui = {
   },
   hl_add = {
     Clock_bg = { bg = "pink", fg = "statusline_bg" },
-    Clock_txt = { bg = "statusline_bg", fg = "pink" }
-  }
+    Clock_txt = { bg = "statusline_bg", fg = "pink" },
+  },
 }
+
+-- M.base46 {
+--   theme = "catppuccin",
+-- }
 
 return M
