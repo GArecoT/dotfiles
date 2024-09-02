@@ -14,8 +14,13 @@ map({ "n" }, "<C-a>", "<cmd> NvimTreeToggle<cr>", { desc = "toggle tree" })
 map({ "n" }, "<C-q>", "<cmd> q<cr>", { desc = "quit" })
 map({ "n" }, "<leader>td", "<cmd> TodoTelescope<cr>", { desc = "quit" })
 map({ "n" }, "<leader>fm", function()
-  require("conform").format { async = "true" }
+  local range = nil
+  require("conform").format { async = true, lsp_format = "fallback", range = range }
 end, { desc = "format file" })
+map({ "n" }, "<C-A-l>", "<cmd>tabnext<cr>", { desc = "quit" })
+map({ "n" }, "<C-A-h>", "<cmd>tabprevious<cr>", { desc = "quit" })
+map({ "n" }, "<C-A-n>", "<cmd>tabnew<cr>", { desc = "quit" })
+map({ "n" }, "<C-A-q>", "<cmd>tabclose<cr>", { desc = "quit" })
 
 -- Buffer Line
 map({ "n", "t" }, "<A-q>", function()

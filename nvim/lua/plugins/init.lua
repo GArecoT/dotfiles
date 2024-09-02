@@ -197,6 +197,7 @@ return {
       require "configs.noice"
     end,
   },
+
   {
     "javiorfo/nvim-soil",
 
@@ -227,4 +228,5 @@ return {
       },
     },
   },
+  { "mg979/vim-visual-multi", lazy = false },
 }
