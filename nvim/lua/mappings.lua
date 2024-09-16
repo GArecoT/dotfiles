@@ -8,6 +8,9 @@ map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
 
 --Custom
+map({ "n", "v" }, "<leader>y", [["+y]])
+map("n", "<leader>Y", [["+Y]])
+
 map({ "n" }, "<C-s>", "<cmd> vsplit <cr>", { desc = "split vertical" })
 map({ "n" }, "<C-x>", "<cmd> split <cr>", { desc = "split horizontal" })
 map({ "n" }, "<C-a>", "<cmd> NvimTreeToggle<cr>", { desc = "toggle tree" })

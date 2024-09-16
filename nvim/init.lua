@@ -12,7 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local lazy_config = require "configs.lazy"
-
+vim.opt.clipboard = "unnamedplus"
 -- load plugins
 require("lazy").setup({
   {
@@ -50,9 +50,9 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 })
 
 --format on save
-vim.api.nvim_create_autocmd("BufWritePre", {
-  pattern = "*",
-  callback = function(args)
-    require("conform").format { bufnr = args.buf }
-  end,
-})
+-- vim.api.nvim_create_autocmd("BufWritePre", {
+--   pattern = "*",
+--   callback = function(args)
+--     require("conform").format { bufnr = args.buf }
+--   end,
+-- })

@@ -7,6 +7,7 @@ local options = {
     js = { "prettier" },
     ts = { "prettier" },
     json = { "prettier" },
+    astro = {"prettier"}
   },
 
   async = true,

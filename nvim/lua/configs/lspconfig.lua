@@ -7,7 +7,7 @@ local lspconfig = require "lspconfig"
 local servers = {
   "html",
   "cssls",
-  "tsserver",
+  "ts_ls",
   "clangd",
   "tailwindcss",
   "pyright",
@@ -52,7 +52,7 @@ require("lspconfig").volar.setup {
       hybridMode = false,
     },
     typescript = {
-      -- tsdk = "/usr/lib/node_modules/typescript/lib",
+      tsdk = "/usr/lib/node_modules/typescript/lib",
     },
   },
   on_attach = on_attach,
