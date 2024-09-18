@@ -1,0 +1,28 @@
+[global]
+frame_color = "#181825"
+separator_color= frame
+font = Inconsolata-medium 12
+height = 100
+width = 500
+icon_position = left
+max_icon_size = 80
+min_icon_size = 80
+transparency = 30
+corner_radius = 10 
+icon_corner_radius = 10
+origin = top-right
+
+[urgency_low]
+background = "#1E1E2E"
+foreground = "#CDD6F4"
+
+[urgency_normal]
+background = "#1E1E2E"
+foreground = "#CDD6F4"
+
+[urgency_critical]
+background = "#1E1E2E"
+foreground = "#CDD6F4"
+frame_color = "#FAB387"
+
+
