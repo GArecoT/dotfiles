@@ -49,6 +49,10 @@ vim.api.nvim_create_autocmd("TextYankPost", {
   pattern = "*",
 })
 
+--Spell
+-- vim.opt.spell = true
+vim.opt.spelllang = "pt_br"
+
 --format on save
 -- vim.api.nvim_create_autocmd("BufWritePre", {
 --   pattern = "*",
