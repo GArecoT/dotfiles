@@ -17,6 +17,7 @@ local servers = {
   "eslint",
   "astro",
   "denols",
+  "dartls"
 }
 
 -- lsps with default config

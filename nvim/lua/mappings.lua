@@ -42,11 +42,11 @@ map({ "n", "t" }, "<A-,>", function()
   require("nvchad.tabufline").move_buf(-1)
 end, { desc = "move tab to left" })
 
-vim.keymap.set("n", "<RightMouse>", function()
-  vim.cmd.exec '"normal! \\<RightMouse>"'
-
-  local options = vim.bo.ft == "NvimTree" and "nvimtree" or "default"
-  require("menu").open(options, { mouse = true })
-end, {})
+-- vim.keymap.set("n", "<RightMouse>", function()
+--   vim.cmd.exec '"normal! \\<RightMouse>"'
+--
+--   local options = vim.bo.ft == "NvimTree" and "nvimtree" or "default"
+--   require("menu").open(options, { mouse = true })
+-- end, {})
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
