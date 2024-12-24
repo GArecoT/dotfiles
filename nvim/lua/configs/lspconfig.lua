@@ -17,7 +17,7 @@ local servers = {
   "eslint",
   "astro",
   "denols",
-  "dartls"
+  "dartls",
 }
 
 -- lsps with default config
@@ -81,6 +81,8 @@ lspconfig.vtsls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
 }
+-- diagnostic
+vim.diagnostic.config { virtual_text = false }
 
 -- Fix autofocus on signature
 -- vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, {
