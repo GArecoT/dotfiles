@@ -21,9 +21,10 @@ map({ "n" }, "<leader>fm", function()
   require("conform").format { async = true, lsp_format = "fallback", range = range }
 end, { desc = "format file" })
 map({ "n" }, "<C-A-l>", "<cmd>tabnext<cr>", { desc = "quit" })
-map({ "n" }, "<C-A-h>", "<cmd>tabprevious<cr>", { desc = "quit" })
-map({ "n" }, "<C-A-n>", "<cmd>tabnew<cr>", { desc = "quit" })
-map({ "n" }, "<C-A-q>", "<cmd>tabclose<cr>", { desc = "quit" })
+map({ "n" }, "gd", "<cmd>Telescope lsp_definitions<cr>", { desc = "See references lsp" })
+map({ "n" }, "<C-A-h>", "<cmd>tabprevious<cr>", { desc = "Tab prev" })
+map({ "n" }, "<C-A-n>", "<cmd>tabnew<cr>", { desc = "Tab next" })
+map({ "n" }, "<C-A-q>", "<cmd>tabclose<cr>", { desc = "Close tab" })
 
 -- Buffer Line
 map({ "n", "t" }, "<A-q>", function()

@@ -14,11 +14,62 @@ return {
       require "configs.lspconfig"
     end,
   },
-  -- {
-  --   "hrsh7th/nvim-cmp",
-  --
-  --   enabled = false,
-  -- },
+  {
+    "hrsh7th/nvim-cmp",
+
+    enabled = false,
+  },
+  {
+    "windwp/nvim-autopairs",
+    event = "InsertEnter",
+    config = true,
+    -- use opts = {} for passing setup options
+    -- this is equivalent to setup({}) function
+  },
+  {
+    "saghen/blink.cmp",
+    dependencies = { "rafamadriz/friendly-snippets" },
+
+    version = "1.*",
+    ---@module 'blink.cmp'
+    ---@type blink.cmp.Config
+    opts = {
+      keymap = {
+        preset = "enter",
+        ["<Tab>"] = { "select_next", "fallback" },
+        ["<S-Tab>"] = { "select_prev", "fallback" },
+      },
+
+      appearance = {
+        nerd_font_variant = "mono",
+      },
+
+      completion = {
+        documentation = { auto_show = true },
+        menu = {
+          border = nil,
+          draw = {
+            treesitter = { "lsp" },
+            columns = {
+              { "label", "label_description" },
+              { "kind_icon", gap = 2, "kind" },
+            },
+          },
+          auto_show = function(ctx)
+            return ctx.mode ~= "cmdline" and not vim.tbl_contains({ "/", "?" }, vim.fn.getcmdtype())
+          end,
+        },
+      },
+
+      sources = {
+        default = { "lsp", "path", "snippets", "buffer" },
+      },
+
+      fuzzy = { implementation = "lua" },
+    },
+
+    opts_extend = { "sources.default" },
+  },
 
   {
     "williamboman/mason.nvim",
@@ -160,11 +211,7 @@ return {
     "folke/todo-comments.nvim",
     lazy = false,
     dependencies = { "nvim-lua/plenary.nvim" },
-    opts = {
-      -- your configuration comes here
-      -- or leave it empty to use the default settings
-      -- refer to the configuration section below
-    },
+    opts = {},
   },
   -- Add comments to vue files
   {
