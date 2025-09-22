@@ -2,86 +2,80 @@
 local on_attach = require("nvchad.configs.lspconfig").on_attach
 local on_init = require("nvchad.configs.lspconfig").on_init
 local capabilities = require("nvchad.configs.lspconfig").capabilities
-capabilities = require("blink.cmp").get_lsp_capabilities(capabilities)
+-- capabilities = require("blink.cmp").get_lsp_capabilities(capabilities)
 
-local lspconfig = require "lspconfig"
+-- local lspconfig = require "lspconfig"
+
+local default_config = {
+  on_attach = on_attach,
+  on_init = on_init,
+  capabilities = capabilities,
+}
 local servers = {
-  "html",
-  "cssls",
-  "ts_ls",
-  "clangd",
-  "tailwindcss",
-  "pyright",
-  "rust_analyzer",
-  "jsonls",
-  "volar",
-  "eslint",
-  "astro",
-  "denols",
-  "dartls",
-}
+  { name = "html", config = default_config },
+  { name = "cssls", config = default_config },
+  {
+    name = "vtsls",
+    config = {
 
--- lsps with default config
-for _, lsp in ipairs(servers) do
-  lspconfig[lsp].setup {
-    on_attach = on_attach,
-    on_init = on_init,
-    capabilities = capabilities,
-  }
-end
-
--- Custom
-lspconfig.rust_analyzer.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-  filetypes = { "rust" },
-  settings = {
-    ["rust_analyzer"] = {
-      cargo = {
-        allFeatures = true,
+      filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
+      settings = {
+        vtsls = {
+          -- autoUseWorkspaceTsdk = true,
+          tsserver = {
+            globalPlugins = {
+              {
+                name = "@vue/typescript-plugin",
+                location = "/usr/lib/node_modules/@vue/typescript-plugin/lib/",
+                languages = { "vue" },
+                configNamespace = "typescript",
+                enableForWorkspaceTypeScriptVersions = true,
+              },
+            },
+          },
+        },
       },
+      on_attach = on_attach,
+      capabilities = capabilities,
     },
   },
-}
-local vue_typescript_plugin = require("mason-registry").get_package("vue-language-server"):get_install_path()
-  .. "/node_modules/@vue/language-server"
-  .. "/node_modules/@vue/typescript-plugin"
+  { name = "clangd", config = default_config },
+  { name = "tailwindcss", config = default_config },
+  { name = "pyright", config = default_config },
+  {
+    name = "rust_analyzer",
+    config = {
 
-require("lspconfig").volar.setup {
-  filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
-  init_options = {
-    vue = {
-      hybridMode = false,
-    },
-    typescript = {
-      tsdk = "/usr/lib/node_modules/typescript/lib",
-    },
-  },
-  on_attach = on_attach,
-  capabilities = capabilities,
-}
-
-lspconfig.vtsls.setup {
-  filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
-  settings = {
-    vtsls = {
-      -- autoUseWorkspaceTsdk = true,
-      tsserver = {
-        globalPlugins = {
-          {
-            name = "@vue/typescript-plugin",
-            location = "/usr/lib/node_modules/@vue/typescript-plugin/lib/",
-            languages = { "vue" },
-            configNamespace = "typescript",
-            enableForWorkspaceTypeScriptVersions = true,
+      on_attach = on_attach,
+      capabilities = capabilities,
+      filetypes = { "rust" },
+      settings = {
+        ["rust_analyzer"] = {
+          cargo = {
+            allFeatures = true,
           },
         },
       },
     },
   },
-  on_attach = on_attach,
-  capabilities = capabilities,
+  { name = "jsonls", config = default_config },
+  {
+    name = "vue_ls",
+    config = default_config,
+  },
+  { name = "eslint", config = default_config },
+  { name = "astro", config = default_config },
+  { name = "denols", config = default_config },
+  { name = "denols", config = default_config },
+  { name = "dartls", config = default_config },
 }
+
+-- lsps with default config
+for _, lsp in ipairs(servers) do
+  vim.lsp.config(lsp.name, lsp.config)
+  vim.lsp.enable(lsp.name)
+end
+
 -- diagnostic
 vim.diagnostic.config { virtual_text = false }
 

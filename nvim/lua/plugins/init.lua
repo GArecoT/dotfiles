@@ -17,8 +17,9 @@ return {
   {
     "hrsh7th/nvim-cmp",
 
-    enabled = false,
+    -- enabled = false,
   },
+  -- { import = "nvchad.blink.lazyspec" },
   {
     "windwp/nvim-autopairs",
     event = "InsertEnter",
@@ -26,50 +27,50 @@ return {
     -- use opts = {} for passing setup options
     -- this is equivalent to setup({}) function
   },
-  {
-    "saghen/blink.cmp",
-    dependencies = { "rafamadriz/friendly-snippets" },
-
-    version = "1.*",
-    ---@module 'blink.cmp'
-    ---@type blink.cmp.Config
-    opts = {
-      keymap = {
-        preset = "enter",
-        ["<Tab>"] = { "select_next", "fallback" },
-        ["<S-Tab>"] = { "select_prev", "fallback" },
-      },
-
-      appearance = {
-        nerd_font_variant = "mono",
-      },
-
-      completion = {
-        documentation = { auto_show = true },
-        menu = {
-          border = nil,
-          draw = {
-            treesitter = { "lsp" },
-            columns = {
-              { "label", "label_description" },
-              { "kind_icon", gap = 2, "kind" },
-            },
-          },
-          auto_show = function(ctx)
-            return ctx.mode ~= "cmdline" and not vim.tbl_contains({ "/", "?" }, vim.fn.getcmdtype())
-          end,
-        },
-      },
-
-      sources = {
-        default = { "lsp", "path", "snippets", "buffer" },
-      },
-
-      fuzzy = { implementation = "lua" },
-    },
-
-    opts_extend = { "sources.default" },
-  },
+  -- {
+  --   "saghen/blink.cmp",
+  --   dependencies = { "rafamadriz/friendly-snippets" },
+  --
+  --   version = "1.*",
+  --   ---@module 'blink.cmp'
+  --   ---@type blink.cmp.Config
+  --   opts = {
+  --     keymap = {
+  --       preset = "enter",
+  --       ["<Tab>"] = { "select_next", "fallback" },
+  --       ["<S-Tab>"] = { "select_prev", "fallback" },
+  --     },
+  --
+  --     appearance = {
+  --       nerd_font_variant = "mono",
+  --     },
+  --
+  --     completion = {
+  --       documentation = { auto_show = true },
+  --       menu = {
+  --         border = nil,
+  --         draw = {
+  --           treesitter = { "lsp" },
+  --           columns = {
+  --             { "label", "label_description" },
+  --             { "kind_icon", gap = 2, "kind" },
+  --           },
+  --         },
+  --         auto_show = function(ctx)
+  --           return ctx.mode ~= "cmdline" and not vim.tbl_contains({ "/", "?" }, vim.fn.getcmdtype())
+  --         end,
+  --       },
+  --     },
+  --
+  --     sources = {
+  --       default = { "lsp", "path", "snippets", "buffer" },
+  --     },
+  --
+  --     fuzzy = { implementation = "lua" },
+  --   },
+  --
+  --   opts_extend = { "sources.default" },
+  -- },
 
   {
     "williamboman/mason.nvim",
@@ -96,6 +97,7 @@ return {
   },
   {
     "nvim-treesitter/nvim-treesitter",
+    enable = false,
     opts = {
       -- ensure_installed = {
       --   "vim",
@@ -225,7 +227,7 @@ return {
     dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
     opts = {},
   },
-  --Noice
+  -- Noice
   {
     "folke/noice.nvim",
     event = "VeryLazy",
