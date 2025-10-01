@@ -72,6 +72,12 @@ tooltip label{
   /* padding: 0 15px; */
   /* padding-right: 30px; */
 }
+#mpris {
+  background-color: #181825;
+  color: #eba0ac;
+  padding: 5px 3px 5px 3px;
+
+}
 #network {
   padding: 5px 3px 5px 3px;
   color: #74c7ec;

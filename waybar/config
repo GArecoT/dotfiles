@@ -7,7 +7,7 @@
    "margin-left": 0,
    "width": 10,
    "modules-right": [],
-    "modules-center": ["niri/workspaces", "tray","network", "battery", "temperature", "pulseaudio", "clock"],
+    "modules-center": ["niri/workspaces", "tray","network", "battery", "temperature", "pulseaudio", "mpris", "clock"],
    "modules-left": [],
 	"niri/workspaces": { 
 		"disable-scroll": true, 
@@ -98,5 +98,18 @@
         	"format-full": "█",
         	"format-icons": ["▁", "▄", "▆"],
           "tooltip-format": " {capacity}%"
-	}
+	},
+"mpris": {
+	"format": "{player_icon}",
+	"format-paused": "{status_icon}",
+          "tooltip-format": "{player}: {title}\n{dynamic}",
+	"player-icons": {
+		"default": "▶",
+	},
+	"status-icons": {
+		"paused": "⏸"
+	},
+  "on-scroll-up": "playerctld shift",
+  "on-scroll-down": "playerctld unshift"
+}
 }
