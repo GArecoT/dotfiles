@@ -1,19 +1,31 @@
 {
-   "layer": "top",
-   "output": ["HDMI-A-1", "HDMI"],
-   "position": "left", 
-   "margin-top": 0,
-   "margin-right": 0,
-   "margin-left": 0,
-   "width": 10,
-   "modules-right": [],
-    "modules-center": ["niri/workspaces", "tray","network", "battery", "temperature", "pulseaudio", "mpris", "clock"],
-   "modules-left": [],
-	"niri/workspaces": { 
-		"disable-scroll": true, 
-   "on-click": "activate", 
-		"format": "{icon}",
-   "persistent_workspaces": {
+  "layer": "top",
+  "output": [
+    "HDMI-A-1",
+    "HDMI"
+  ],
+  "position": "left",
+  "margin-top": 0,
+  "margin-right": 0,
+  "margin-left": 0,
+  "width": 10,
+  "modules-right": [],
+  "modules-center": [
+    "niri/workspaces",
+    "tray",
+    "network",
+    "battery",
+    "temperature",
+    "pulseaudio",
+    "mpris",
+    "clock"
+  ],
+  "modules-left": [],
+  "niri/workspaces": {
+    "disable-scroll": true,
+    "on-click": "activate",
+    "format": "{icon}",
+    "persistent_workspaces": {
       "1": [],
       "2": [],
       "3": [],
@@ -24,92 +36,99 @@
       "8": [],
       "9": [],
       "10": [],
-	},
-   "format-icons": {
+    },
+    "format-icons": {
       "default": "●",
       "active": "●"
-      }
-     },
+    }
+  },
   "tray": {
     "icon-size": 13,
     "spacing": 10
   },
-"custom/date": { 
-    "format": "{}",                              
-		"interval": 3600,
-		"exec": "$HOME/.config/waybar/waybar-date.sh"
-	}, 
-	"clock": {
-		"format": "{:%I\n%M}",
+  "custom/date": {
+    "format": "{}",
+    "interval": 3600,
+    "exec": "$HOME/.config/waybar/waybar-date.sh"
+  },
+  "clock": {
+    "format": "{:%I\n%M}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
-	}, 
-	"network": { 
-        	"format-wifi": " ",                                        
-        	"format-ethernet": "🖧",  
-        	"format-linked": "",
-        	"format-disconnected": "",  
-          "tooltip-format-wifi": "{essid} | Signal Strenght: {signalStrength}% | Down Speed: {bandwidthDownBits}, Up Speed: {bandwidthUpBits}",
-          "on-click": "gnome-control-center" 
-	},  
-	"custom/updates": {                                      
-        "interval": 120,                                       
-        "return-type": "string", 
-        "exec": "~/.config/waybar/modules/updates.sh",
-        "tooltip": false, 
-		"on-click":"setsid -f wezterm start paru -Syyu" 
-		//"on-click":"setsid -f foot -e paru -Syyu"  
-    },  
-    "pulseaudio": {                                       
-      "justify": "center",
-		"format": "{icon}\n{volume}",  
-        	"format-muted": "Muted",                                        
-                "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-                "scroll-step": 2, 
-        	"format-icons": { 
-            	"default": ["🕩", "🕩", "🕪"]
-        },
-        "on-click-right": "pavucontrol"
+  },
+  "network": {
+    "format-wifi": " ",
+    "format-ethernet": "🖧",
+    "format-linked": "",
+    "format-disconnected": "",
+    "tooltip-format-wifi": "{essid} | Signal Strenght: {signalStrength}% | Down Speed: {bandwidthDownBits}, Up Speed: {bandwidthUpBits}",
+    "on-click": "gnome-control-center"
+  },
+  "custom/updates": {
+    "interval": 120,
+    "return-type": "string",
+    "exec": "~/.config/waybar/modules/updates.sh",
+    "tooltip": false,
+    "on-click": "setsid -f wezterm start paru -Syyu"
+    //"on-click":"setsid -f foot -e paru -Syyu"  
+  },
+  "pulseaudio": {
+    "justify": "center",
+    "format": "{icon}\n{volume}",
+    "format-muted": "Muted",
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "scroll-step": 2,
+    "format-icons": {
+      "default": [
+        "🕩",
+        "🕩",
+        "🕪"
+      ]
     },
-    "temperature": {
-      "justify": "center",
-        "thermal-zone": 2,
-        "hwmon-path": "/sys/class/hwmon/hwmon0/temp1_input",
-        "critical-threshold": 80, 
-        "format-critical": "\n{temperatureC}",
-        "format": "\n{temperatureC}",    
-        "interval": 1
+    "on-click-right": "pavucontrol"
+  },
+  "temperature": {
+    "justify": "center",
+    "thermal-zone": 2,
+    "hwmon-path": "/sys/class/hwmon/hwmon0/temp1_input",
+    "critical-threshold": 80,
+    "format-critical": "\n{temperatureC}",
+    "format": "\n{temperatureC}",
+    "interval": 1
+  },
+  "niri/window": {
+    "max-length": 60,
+    "format": " {title} ",
+    "rewrite": {
+      "  ": " niri ~ Desktop "
+    }
+  },
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
     },
-    "niri/window":{
-      "max-length": 60,
-      "format": " {title} ",
-      "rewrite": {
-        "  ": " niri ~ Desktop "
-      }
+    "format": "{icon}",
+    "format-charging": "🗲",
+    "format-plugged": "🗲",
+    "format-alt": "{icon}",
+    "format-full": "█",
+    "format-icons": [
+      "▁",
+      "▄",
+      "▆"
+    ],
+    "tooltip-format": " {capacity}%"
+  },
+  "mpris": {
+    "format": "{player_icon}",
+    "format-paused": "{status_icon}",
+    "tooltip-format": "{player}: {title}\n{dynamic}",
+    "player-icons": {
+      "default": "▶",
     },
-	"battery": {
-        	"states": {
-            		"warning": 30,
-            		"critical": 15
-        	},
-        	"format": "{icon}",
-        	"format-charging": "🗲",
-        	"format-plugged": "🗲",
-        	"format-alt": "{icon}",
-        	"format-full": "█",
-        	"format-icons": ["▁", "▄", "▆"],
-          "tooltip-format": " {capacity}%"
-	},
-"mpris": {
-	"format": "{player_icon}",
-	"format-paused": "{status_icon}",
-          "tooltip-format": "{player}: {title}\n{dynamic}",
-	"player-icons": {
-		"default": "▶",
-	},
-	"status-icons": {
-		"paused": "⏸"
-	},
-  "on-scroll-up": "playerctld shift",
-  "on-scroll-down": "playerctld unshift"
-}
+    "status-icons": {
+      "paused": "⏸"
+    },
+    "on-click-right": "playerctld shift",
+  }
 }
