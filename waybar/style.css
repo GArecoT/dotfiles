@@ -1,6 +1,6 @@
 * {
   border: none;
-  border-radius: 0;
+  /* border-radius: 0; */
   font-family: Inconsolata-Black;
   font-size: 13px;
   min-height: 10px;
@@ -55,6 +55,7 @@ window#waybar {
 tooltip {
   background: #1e1e2e;
   border-radius: 10px;
+  margin: 10px;
 }
 
 tooltip box {
@@ -62,7 +63,8 @@ tooltip box {
   font-size: 40px
 }
 tooltip label{
-  font-size: 15px
+  font-size: 15px;
+  border-radius: 10px;
 }
 
 #pulseaudio {

@@ -8,7 +8,6 @@
   "margin-top": 0,
   "margin-right": 0,
   "margin-left": 0,
-  "width": 10,
   "modules-right": [],
   "modules-center": [
     "niri/workspaces",
@@ -53,7 +52,13 @@
   },
   "clock": {
     "format": "{:%I\n%M}",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    "tooltip-format": "<big>{:%d %B %Y}</big>\n<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "format": {
+        "months": "<span/>",
+        "today": "<span color='#c49ec4'><b>{}</b></span>"
+      }
+    },
   },
   "network": {
     "format-wifi": " ",
