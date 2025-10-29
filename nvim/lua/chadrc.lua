@@ -12,17 +12,17 @@ M.ui = {
     separator_style = "round",
     order = { "mode", "file", "diagnostics", "git", "%=", "lsp_msg", "%=", "lsp", "cursor", "cwd" },
 
-    modules = {
-      cwd = function()
-        return "%#Clock_txt#"
-          .. ""
-          .. "%#Clock_bg# "
-          .. "%#Clock_txt# "
-          .. string.format(os.date "%R")
-          .. "%#St_sep_r#"
-          .. ""
-      end,
-    },
+    -- modules = {
+    --   cwd = function()
+    --     return "%#Clock_txt#"
+    --       .. ""
+    --       .. "%#Clock_bg# "
+    --       .. "%#Clock_txt# "
+    --       .. string.format(os.date "%R")
+    --       .. "%#St_sep_r#"
+    --       .. ""
+    --   end,
+    -- },
   },
 
   -- theme = "catppuccin",
