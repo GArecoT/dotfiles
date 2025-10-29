@@ -11,23 +11,22 @@ transparency = 50
 corner_radius = 10 
 icon_corner_radius = 10
 origin = top-right
+notification_limit = 5
 monitor = 1
+timeout = 5
 
 [urgency_low]
 background = "#1E1E2E"
 foreground = "#CDD6F4"
-timeout = 5
 
 [urgency_normal]
 background = "#1E1E2E"
 foreground = "#CDD6F4"
 frame_color = "#cba6f7"
-timeout = 5
 
 [urgency_critical]
 background = "#1E1E2E"
 foreground = "#CDD6F4"
 frame_color = "#FAB387"
-timeout = 5
 
 
