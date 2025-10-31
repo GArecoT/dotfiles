@@ -22,7 +22,7 @@ input {
         }
 
         // Enable numlock on startup, omitting this setting disables it.
-        numlock
+        // numlock
     }
 
     // Next sections include libinput settings.
@@ -115,7 +115,7 @@ output "eDP-1" {
 // https://yalter.github.io/niri/Configuration:-Layout
 layout {
     // Set gaps around windows in logical pixels.
-    gaps 16
+    gaps 8
 
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
@@ -142,7 +142,7 @@ layout {
     // preset-window-heights { }
 
     // You can change the default width of the new windows.
-    default-column-width { proportion 0.5; }
+    default-column-width { proportion 0.75; }
     // If you leave the brackets empty, the windows themselves will decide their initial width.
     // default-column-width {}
 
@@ -171,13 +171,13 @@ layout {
         // - CSS-like notation: "rgb(255, 127, 0)", rgba(), hsl() and a few others.
 
         // Color of the ring on the active monitor.
-        active-color "#cba6f7"
+        // active-color "#cba6f7"
 
         // Color of the ring on inactive monitors.
         //
         // The focus ring only draws around the active window, so the only place
         // where you can see its inactive-color is on other monitors.
-        inactive-color "#505050"
+        // inactive-color "#505050"
 
         // You can also use gradients. They take precedence over solid colors.
         // Gradients are rendered the same as CSS linear-gradient(angle, from, to).
@@ -186,13 +186,13 @@ layout {
         // You can use any CSS linear-gradient tool on the web to set these up.
         // Changing the color space is also supported, check the wiki for more info.
         //
-        // active-gradient from="#80c8ff" to="#c7ff7f" angle=45
+        active-gradient from="#cba6f7" to="#fab387" angle=45
 
         // You can also color the gradient relative to the entire view
         // of the workspace, rather than relative to just the window itself.
         // To do that, set relative-to="workspace-view".
         //
-        // inactive-gradient from="#505050" to="#808080" angle=45 relative-to="workspace-view"
+        inactive-gradient from="#505050" to="#808080" angle=45 relative-to="workspace-view"
     }
 
     // You can also add a border. It's similar to the focus ring, but always visible.
@@ -274,12 +274,12 @@ layout {
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "waybar"
 spawn-at-startup "dunst"
-spawn-sh-at-startup "waybar -c ~/.config/waybar/config2 -s ~/.config/waybar/style2.css"
+// spawn-sh-at-startup "waybar -c ~/.config/waybar/config2 -s ~/.config/waybar/style2.css"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 spawn-sh-at-startup "wl-paste --type text --watch cliphist store"
 spawn-sh-at-startup "wl-paste --type image --watch cliphist store"
-spawn-sh-at-startup "swaybg -i ~/Imagens/cat-waves.png"
+spawn-sh-at-startup "swaybg -i ~/Imagens/tetris.png"
 
 hotkey-overlay {
     // Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
@@ -309,7 +309,7 @@ animations {
     // off
 
     // Slow down all animations by this factor. Values below 1 speed them up instead.
-    // slowdown 3.0
+    // slowdown 1.2
 }
 
 // Window rules let you adjust behavior for individual windows.
@@ -332,13 +332,18 @@ window-rule {
     // - host Firefox (app-id is "firefox")
     // - Flatpak Firefox (app-id is "org.mozilla.firefox")
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+    match app-id="Rofi" 
     open-floating true
+}
+window-rule {
+  match app-id="org.telegram.desktop"
+
+  default-column-width { fixed 380; }
 }
 window-rule {
     // This app-id regular expression will work for both:
     // - host Firefox (app-id is "firefox")
     // - Flatpak Firefox (app-id is "org.mozilla.firefox")
-    match app-id="Rofi" 
     open-floating true
 }
 
@@ -386,6 +391,7 @@ binds {
     Mod+V hotkey-overlay-title="Clipboard: fuzzel" { spawn-sh "cliphist list | rofi -dmenu  -theme /~/.config/rofi/rofi/files/launchers/type-1/style-3.rasi | cliphist decode | wl-copy"; }
     Mod+C hotkey-overlay-title="Emoji picker: fuzzel" { spawn-sh "rofi -show emoji -theme ~/.config/rofi/rofi/files/launchers/type-2/style-2.rasi"; }
     Super+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn-sh "~/.config/rofi/rofi/files/powermenu/type-1/lock.sh"; }
+    Alt+Tab { switch-focus-between-floating-and-tiling; }
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.
@@ -569,7 +575,7 @@ binds {
     // Expel the bottom window from the focused column to the right.
     // Mod+Period { expel-window-from-column; }
 
-    // Mod+R { switch-preset-column-width; }
+    Mod+R { switch-preset-column-width; }
     // Cycling through the presets in reverse order is also possible.
     // Mod+R { switch-preset-column-width-back; }
     // Mod+Shift+R { switch-preset-window-height; }
@@ -594,12 +600,12 @@ binds {
     // * adjust width as a percentage of screen width: "-10%" or "+10%"
     // Pixel sizes use logical, or scaled, pixels. I.e. on an output with scale 2.0,
     // set-column-width "100" will make the column occupy 200 physical screen pixels.
-    Mod+Alt+Left { set-column-width "-10%"; }
-    Mod+Alt+Right { set-column-width "+10%"; }
+    Mod+Alt+Left { set-column-width "-2%"; }
+    Mod+Alt+Right { set-column-width "+2%"; }
 
     // Finer height adjustments when in column with other windows.
-    Mod+Alt+Up { set-window-height "-10%"; }
-    Mod+Alt+Down { set-window-height "+10%"; }
+    Mod+Alt+Up { set-window-height "-2%"; }
+    Mod+Alt+Down { set-window-height "+2%"; }
 
     // Move the focused window between the floating and the tiling layout.
     Mod+Shift+Space       { toggle-window-floating; }
