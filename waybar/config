@@ -107,7 +107,7 @@
     "format-charging": "🗲",
     "format-plugged": "🗲",
     "format-alt": "{icon}",
-    "format-full": "█",
+    "format-full": "",
     "format-icons": [
       "",
       "",

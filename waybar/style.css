@@ -41,7 +41,7 @@ window#waybar {
 }
 #clock {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 15px;
   padding: 10px 0px 10px 0px;
   /* padding: 0 20px; */
   /* color: #b4befe; */
@@ -125,8 +125,8 @@ tooltip label{
 }
 #workspaces button.focused {
   padding: 5px 3px 5px 3px;
-  color: #0f0f0f;
-  background-color: #cba6f7;
+  color: #cba6f7;
+  /* background-color: #cba6f7; */
   border-radius: 15px;
 }
 #custom-updates {
