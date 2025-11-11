@@ -13,10 +13,10 @@
     "niri/workspaces",
     "tray",
     "network",
-    "battery",
     "temperature",
     "pulseaudio",
     "mpris",
+    "battery",
     "clock"
   ],
   "modules-left": [],
@@ -24,21 +24,9 @@
     "disable-scroll": true,
     "on-click": "activate",
     "format": "{icon}",
-    "persistent_workspaces": {
-      "1": [],
-      "2": [],
-      "3": [],
-      "4": [],
-      "5": [],
-      "6": [],
-      "7": [],
-      "8": [],
-      "9": [],
-      "10": [],
-    },
     "format-icons": {
-      "default": "●",
-      "active": "●"
+      "default": "",
+      "active": ""
     }
   },
   "tray": {
@@ -51,18 +39,20 @@
     "exec": "$HOME/.config/waybar/waybar-date.sh"
   },
   "clock": {
-    "format": "{:%I\n%M}",
+    "justify": "center",
+    "format": "{:%I\n%M\n<span>󰫢</span><span color='#ee99a0'>\n%d\n%m</span>}",
     "tooltip-format": "<big>{:%d %B %Y}</big>\n<tt><small>{calendar}</small></tt>",
     "calendar": {
       "format": {
         "months": "<span/>",
-        "today": "<span color='#c49ec4'><b>{}</b></span>"
+        "today": "<span color='#ee99a0'><b>{}</b></span>"
       }
     },
   },
   "network": {
+    "justify": "center",
     "format-wifi": " ",
-    "format-ethernet": "🖧",
+    "format-ethernet": "",
     "format-linked": "",
     "format-disconnected": "",
     "tooltip-format-wifi": "{essid} | Signal Strenght: {signalStrength}% | Down Speed: {bandwidthDownBits}, Up Speed: {bandwidthUpBits}",
@@ -79,14 +69,14 @@
   "pulseaudio": {
     "justify": "center",
     "format": "{icon}\n{volume}",
-    "format-muted": "Muted",
+    "format-muted": "",
     "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
     "scroll-step": 2,
     "format-icons": {
       "default": [
-        "🕩",
-        "🕩",
-        "🕪"
+        "",
+        "",
+        ""
       ]
     },
     "on-click-right": "pavucontrol"
@@ -96,8 +86,8 @@
     "thermal-zone": 2,
     "hwmon-path": "/sys/class/hwmon/hwmon0/temp1_input",
     "critical-threshold": 80,
-    "format-critical": "\n{temperatureC}",
-    "format": "\n{temperatureC}",
+    "format-critical": "<span color='#f38ba8'>\n{temperatureC}</span>",
+    "format": "\n{temperatureC}",
     "interval": 1
   },
   "niri/window": {
@@ -112,15 +102,17 @@
       "warning": 30,
       "critical": 15
     },
-    "format": "{icon}",
+    "justify": "center",
+    "format": "{icon}\n{capacity}%",
     "format-charging": "🗲",
     "format-plugged": "🗲",
     "format-alt": "{icon}",
     "format-full": "█",
     "format-icons": [
-      "▁",
-      "▄",
-      "▆"
+      "",
+      "",
+      "",
+      ""
     ],
     "tooltip-format": " {capacity}%"
   },
@@ -129,10 +121,10 @@
     "format-paused": "{status_icon}",
     "tooltip-format": "{player}: {title}\n{dynamic}",
     "player-icons": {
-      "default": "▶",
+      "default": "",
     },
     "status-icons": {
-      "paused": "⏸"
+      "paused": ""
     },
     "on-click-right": "playerctld shift",
   }

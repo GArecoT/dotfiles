@@ -1,7 +1,7 @@
 * {
   border: none;
   /* border-radius: 0; */
-  font-family: Inconsolata-Black;
+  font-family: 'NotoSans Nerd Font Propo';
   font-size: 13px;
   min-height: 10px;
 }
@@ -45,7 +45,7 @@ window#waybar {
   padding: 10px 0px 10px 0px;
   /* padding: 0 20px; */
   /* color: #b4befe; */
-  color: #c49ec4;
+  color: #fab387;
   background-color: #1e1e2e;
   border-radius: 0px 0px 10px 10px
   /* border-top-right-radius: 10px; */
@@ -69,20 +69,20 @@ tooltip label{
 
 #pulseaudio {
   padding: 5px 3px 5px 3px;
-  color: #f2cdcd;
+  color: #89dceb;
   /* padding-right: 15px; */
   /* padding: 0 15px; */
   /* padding-right: 30px; */
 }
 #mpris {
   background-color: #181825;
-  color: #eba0ac;
+  color: #89dceb;
   padding: 5px 3px 5px 3px;
 
 }
 #network {
   padding: 5px 3px 5px 3px;
-  color: #74c7ec;
+  color: #b4befe;
   /* padding: 0 15px; */
   /* padding-left: 30px; */
   /* border-top-left-radius: 10px; */
@@ -96,12 +96,12 @@ tooltip label{
 }
 #temperature {
   padding: 5px 3px 5px 3px;
-  color: #94e2d5;
+  color: #89b4fa;
 }
 #battery {
   padding: 5px 3px 5px 3px;
   /* margin-top: 5px; */
-  color: #89dceb;
+  color: #94e2d5;
 }
 #workspaces {
   padding: 5px 3px 5px 3px;
@@ -121,12 +121,12 @@ tooltip label{
 }
 #custom-media {
   padding: 5px 3px 5px 3px;
-  color: #b4befe;
+  color: #91d7e3;
 }
 #workspaces button.focused {
   padding: 5px 3px 5px 3px;
   color: #0f0f0f;
-  background-color: #c49ec4;
+  background-color: #cba6f7;
   border-radius: 15px;
 }
 #custom-updates {
@@ -147,7 +147,7 @@ tooltip label{
 
 #workspaces button:hover {
   padding: 5px 3px 5px 3px;
-  background-color: #c49ec4;
+  background-color: #cba6f7;
   color: #0f0f0f;
   border-radius: 15px;
 }
