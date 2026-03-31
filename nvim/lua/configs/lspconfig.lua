@@ -3,40 +3,50 @@ local on_attach = require("nvchad.configs.lspconfig").on_attach
 local on_init = require("nvchad.configs.lspconfig").on_init
 local capabilities = require("nvchad.configs.lspconfig").capabilities
 -- capabilities = require("blink.cmp").get_lsp_capabilities(capabilities)
+--
+local vue_language_server_path = vim.fn.stdpath "data"
+  .. "/mason/packages/vue-language-server/node_modules/@vue/language-server"
 
--- local lspconfig = require "lspconfig"
-
+local tsserver_filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" }
+local vue_plugin = {
+  name = "@vue/typescript-plugin",
+  location = vue_language_server_path,
+  languages = { "vue" },
+  configNamespace = "typescript",
+}
 local default_config = {
   on_attach = on_attach,
   on_init = on_init,
   capabilities = capabilities,
 }
+
 local servers = {
   { name = "html", config = default_config },
   { name = "cssls", config = default_config },
   {
     name = "vtsls",
     config = {
-
-      filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
       settings = {
         vtsls = {
-          -- autoUseWorkspaceTsdk = true,
           tsserver = {
             globalPlugins = {
-              {
-                name = "@vue/typescript-plugin",
-                location = "/usr/lib/node_modules/@vue/typescript-plugin/lib/",
-                languages = { "vue" },
-                configNamespace = "typescript",
-                enableForWorkspaceTypeScriptVersions = true,
-              },
+              vue_plugin,
             },
           },
         },
       },
-      on_attach = on_attach,
-      capabilities = capabilities,
+      filetypes = tsserver_filetypes,
+    },
+  },
+  {
+    name = "ts_ls",
+    config = {
+      init_options = {
+        plugins = {
+          vue_plugin,
+        },
+      },
+      filetypes = tsserver_filetypes,
     },
   },
   { name = "clangd", config = default_config },
@@ -61,11 +71,10 @@ local servers = {
   { name = "jsonls", config = default_config },
   {
     name = "vue_ls",
-    config = default_config,
+    config = {},
   },
   { name = "eslint", config = default_config },
   { name = "astro", config = default_config },
-  { name = "denols", config = default_config },
   { name = "denols", config = default_config },
   { name = "dartls", config = default_config },
 }

@@ -97,15 +97,25 @@ return {
   },
   {
     "nvim-treesitter/nvim-treesitter",
-    enable = false,
+    lazy = false,
+    branch = "main",
+    -- enable = false,
+    build = ":TSUpdate",
     opts = {
-      -- ensure_installed = {
-      --   "vim",
-      --   "lua",
-      --   "vimdoc",
-      --   "html",
-      --   "css",
-      -- },
+      ensure_installed = {
+        "vim",
+        "lua",
+        "vimdoc",
+        "html",
+        "css",
+        "vue",
+        "typescript",
+        "javascript",
+        "rust",
+        "python",
+        "scss",
+        "sass"
+      },
       highlight = {
         enable = true,
         use_languagetree = true,
@@ -139,6 +149,14 @@ return {
       vim.api.nvim_create_user_command("PeekOpen", require("peek").open, {})
       vim.api.nvim_create_user_command("PeekClose", require("peek").close, {})
     end,
+  },
+  {
+    "MeanderingProgrammer/render-markdown.nvim",
+    ft = { "markdown" },
+    dependencies = { "nvim-treesitter/nvim-treesitter" }, -- if you use the mini.nvim suite
+    ---@module 'render-markdown'
+    ---@type render.md.UserConfig
+    opts = {},
   },
   {
     "andymass/vim-matchup",
