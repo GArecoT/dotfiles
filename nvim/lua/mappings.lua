@@ -1,8 +1,9 @@
-require "nvchad.mappings"
+-- require "nvchad.mappings"
 
 -- add yours here
 
 local map = vim.keymap.set
+local builtin = require "telescope.builtin"
 
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
@@ -16,34 +17,41 @@ map({ "n" }, "<C-x>", "<cmd> split <cr>", { desc = "split horizontal" })
 map({ "n" }, "<C-a>", "<cmd> NvimTreeToggle<cr>", { desc = "toggle tree" })
 map({ "n" }, "<C-q>", "<cmd> q<cr>", { desc = "quit" })
 map({ "n" }, "<leader>td", "<cmd> TodoTelescope<cr>", { desc = "quit" })
+
+-- Comentário
+map("n", "<leader>/", "gcc", { remap = true })
+map("v", "<leader>/", "gc", { remap = true })
+
+--Telescope
+map("n", "<leader>ff", builtin.find_files, { desc = "Telescope find files" })
+map("n", "<leader>fw", builtin.live_grep, { desc = "Telescope live grep" })
+map("n", "<leader>fo", builtin.oldfiles, { desc = "Telescope live grep" })
+
 map({ "n" }, "<leader>fm", function()
   local range = nil
   require("conform").format { async = true, lsp_format = "fallback", range = range }
 end, { desc = "format file" })
 map({ "n" }, "<C-A-l>", "<cmd>tabnext<cr>", { desc = "quit" })
 map({ "n" }, "gd", "<cmd>Telescope lsp_definitions<cr>", { desc = "See references lsp" })
+
+-- Tab
 map({ "n" }, "<C-A-h>", "<cmd>tabprevious<cr>", { desc = "Tab prev" })
 map({ "n" }, "<C-A-n>", "<cmd>tabnew<cr>", { desc = "Tab next" })
 map({ "n" }, "<C-A-q>", "<cmd>tabclose<cr>", { desc = "Close tab" })
 
 -- Buffer Line
-map({ "n", "t" }, "<A-q>", function()
-  require("nvchad.tabufline").close_buffer()
-end, { desc = "move tab right" })
-map({ "n", "t" }, "<A-l>", function()
-  require("nvchad.tabufline").next()
-end, { desc = "move tab right" })
-map({ "n", "t" }, "<A-h>", function()
-  require("nvchad.tabufline").prev()
-end, { desc = "move tab left" })
-map({ "n", "t" }, "<A-.>", function()
-  require("nvchad.tabufline").move_buf(1)
-end, { desc = "move tab to right" })
-map({ "n", "t" }, "<A-,>", function()
-  require("nvchad.tabufline").move_buf(-1)
-end, { desc = "move tab to left" })
+map({ "n" }, "<A-l>", "<cmd>BufferNext<cr>", { desc = "Close tab" })
+map({ "n" }, "<A-h>", "<cmd>BufferPrevious<cr>", { desc = "Close tab" })
+map({ "n" }, "<A-q>", "<cmd>BufferClose<cr>", { desc = "Close tab" })
+map({ "n" }, "<A-,>", "<cmd>BufferMovePrevious<cr>", { desc = "Close tab" })
+map({ "n" }, "<A-.>", "<cmd>BufferMoveNext<cr>", { desc = "Close tab" })
 
--- vim.keymap.set("n", "<RightMouse>", function()
+map("n", "<C-l>", "<C-w>l", { desc = "Move to right split" })
+map("n", "<C-h>", "<C-w>h", { desc = "Move to left split" })
+map("n", "<C-j>", "<C-w>j", { desc = "Move to bottom split" })
+map("n", "<C-k>", "<C-w>k", { desc = "Move to top split" })
+
+-- map("n", "<RightMouse>", function()
 --   vim.cmd.exec '"normal! \\<RightMouse>"'
 --
 --   local options = vim.bo.ft == "NvimTree" and "nvimtree" or "default"
