@@ -2,3 +2,35 @@ require("peek").setup()
 -- refer to `configuration to change defaults`
 vim.api.nvim_create_user_command("PeekOpen", require("peek").open, {})
 vim.api.nvim_create_user_command("PeekClose", require("peek").close, {})
+
+vim.api.nvim_create_autocmd("PackChanged", {
+  callback = function(ev)
+	vim.print(ev)
+    local name, kind = ev.data.spec.name, ev.data.kind
+    local path = ev.data.path
+    if name == "peek.nvim" and (kind == "install" or kind == "update") then
+      if not ev.data.active then
+        vim.cmd.packadd "telescope-fzf-native.nvim"
+      end
+      vim.system({ "sh", "-c", "cd " .. path .. " && deno task --quiet build:fast" }, {
+        on_stdout = function(_, data)
+          if data then
+            print(data)
+          end
+        end,
+        on_stderr = function(_, data)
+          if data then
+            print("ERR:", data)
+          end
+        end,
+        on_exit = function(_, code)
+          if code == 0 then
+            print "telescope-fzf-native.nvim built successfully!"
+          else
+            print "Failed to build telescope-fzf-native.nvim"
+          end
+        end,
+      })
+    end
+  end,
+})
