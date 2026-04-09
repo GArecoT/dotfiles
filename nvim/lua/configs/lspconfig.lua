@@ -17,6 +17,8 @@ vim.lsp.enable {
   "astro",
   "denols",
   "dartls",
+  "prettier",
+  "json-lsp",
 }
 
 -- diagnostic

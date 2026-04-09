@@ -12,6 +12,9 @@ vim.opt.spelllang = "pt_br"
 -- Tema
 vim.cmd.colorscheme "monoglow"
 vim.api.nvim_set_hl(0, "MiniIndentscopeSymbol", { fg = "#cba6f7" }) -- Set to red
+vim.api.nvim_set_hl(0, "BufferCurrent", { fg = "#cba6f7" })
+vim.api.nvim_set_hl(0, "BufferCurrentIndex", { fg = "#cba6f7" })
+vim.api.nvim_set_hl(0, "BufferCurrentSign", { fg = "#cba6f7" })
 
 -- Diagnósticos
 vim.diagnostic.config {

@@ -16,6 +16,8 @@ map({ "n" }, "<C-s>", "<cmd> vsplit <cr>", { desc = "split vertical" })
 map({ "n" }, "<C-x>", "<cmd> split <cr>", { desc = "split horizontal" })
 map({ "n" }, "<C-a>", "<cmd> NvimTreeToggle<cr>", { desc = "toggle tree" })
 map({ "n" }, "<C-q>", "<cmd> q<cr>", { desc = "quit" })
+
+-- TODO
 map({ "n" }, "<leader>td", "<cmd> TodoTelescope<cr>", { desc = "quit" })
 
 -- Comentário
@@ -33,6 +35,9 @@ map({ "n" }, "<leader>fm", function()
 end, { desc = "format file" })
 map({ "n" }, "<C-A-l>", "<cmd>tabnext<cr>", { desc = "quit" })
 map({ "n" }, "gd", "<cmd>Telescope lsp_definitions<cr>", { desc = "See references lsp" })
+
+-- Copiar todo arquivo
+map({ "n" }, "<C-c>", "ggyG")
 
 -- Tab
 map({ "n" }, "<C-A-h>", "<cmd>tabprevious<cr>", { desc = "Tab prev" })
