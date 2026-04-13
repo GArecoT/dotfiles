@@ -17,6 +17,10 @@ vim.api.nvim_set_hl(0, "BufferCurrentMod", { fg = "#cba6f7" })
 vim.api.nvim_set_hl(0, "BufferCurrentIndex", { fg = "#cba6f7" })
 vim.api.nvim_set_hl(0, "BufferCurrentSign", { fg = "#cba6f7" })
 
+-- Tabline
+vim.opt.shiftwidth = 2
+vim.opt.tabstop = 2
+
 -- Diagnósticos
 vim.diagnostic.config {
   signs = {

@@ -38,6 +38,7 @@ vim.pack.add {
   { src = gh "rose-pine/neovim", name = "rose-pine" },
   { src = gh "catppuccin/nvim", name = "catppuccin" },
   { src = gh "wnkz/monoglow.nvim", name = "monoglow" },
+  { src = gh "nyoom-engineering/oxocarbon.nvim", name = "oxocarbon" },
 }
 
 require "configs.conform"
