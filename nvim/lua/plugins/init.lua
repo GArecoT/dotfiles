@@ -52,6 +52,7 @@ require "configs.toggleterm"
 require "configs.tiny-inline-diagnostic"
 require "configs.nvim-ts-autotag"
 require "configs.catppuccin"
+-- Tema
 require "configs.monoglow"
 require "configs.blink"
 require "configs.barbar"
