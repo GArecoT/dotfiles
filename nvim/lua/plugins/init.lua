@@ -11,6 +11,7 @@ vim.pack.add {
   { src = gh "neovim/nvim-lspconfig" },
   { src = gh "rafamadriz/friendly-snippets" },
   { src = gh "saghen/blink.cmp" },
+  { src = gh "https://github.com/saghen/blink.lib" },
   { src = gh "hrsh7th/nvim-cmp" },
   { src = gh "windwp/nvim-autopairs" },
   { src = gh "williamboman/mason.nvim" },
